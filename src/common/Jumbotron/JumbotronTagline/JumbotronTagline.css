@@ -1,0 +1,36 @@
+.jumbotron-tagline-header {
+    font-weight: 400;
+}
+
+.jumbotron-tagline-header-container {
+    margin-bottom: 2%;
+}
+
+.jumbotron-tagline-typewriter {
+    font-weight: 500 !important;
+    display: contents !important;
+}
+
+.jumbotron-tagline-typewriter-container {
+    margin-bottom: 5%;
+}
+
+.jumbotron-tagline-pre_typewriter {
+    display: contents;
+    font-weight: 200;
+}
+
+
+@media only screen and (max-width: 576px) {
+    .jumbotron-tagline-header-container {
+        margin-bottom: 10%;
+    }
+    
+    .jumbotron-tagline-typewriter-container {
+        margin-bottom: 15%;
+    }
+    
+    .jumbotron-tagline-cta-btn {
+        margin-bottom: 3%;
+    }
+}

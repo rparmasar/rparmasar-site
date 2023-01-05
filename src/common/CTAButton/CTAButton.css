@@ -1,0 +1,11 @@
+.cta-btn-outline-primary{
+    border-color: var(--primary);
+    color: var(--primary);
+    border-radius: 2rem;
+}
+
+.cta-btn-outline-secondary{
+    border-color: var(--secondary);
+    color: var(--secondary);
+    border-radius: 2rem;
+}

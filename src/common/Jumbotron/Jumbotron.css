@@ -1,0 +1,20 @@
+.jumbotron-container {
+    height: 100vh;
+}
+
+.jumbotron-row-container {
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.jumbotron-img-container {
+    /* justify-content: center;
+    align-items: center; */
+    width: auto;
+    height: 25%;
+}
+
+.jumbotron-img {
+    object-fit: contain;
+}

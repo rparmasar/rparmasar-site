@@ -1,11 +1,60 @@
+/* For reusable colours */
+:root {
+  --primary: #44A1DC;
+  --secondary: #4960E2;
+  --main-bg: #030303;
+  --main-txt: #FEFEFE;
+  --dev-section-bg: #A0DDE6;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  padding: 0;
+  overflow-x: hidden;
+  background-color: var(--main-bg, #030303) !important;
+  color: var(--main-txt, #FEFEFE) !important;
+  font-family: -apple-system, BlinkMacSystemFont, 'M_PLUS_Rounded_1c', 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* Thin Weight */
+@font-face {
+  font-family: 'M_PLUS_Rounded_1c';
+  src: local('M_PLUS_Rounded_1c/MPLUSRounded1c-Thin.ttf'), url(./assets/fonts/M_PLUS_Rounded_1c/MPLUSRounded1c-Thin.ttf) format('ttf');
+  font-weight: 100;
+}
+
+/* Light Weight */
+@font-face {
+  font-family: 'M_PLUS_Rounded_1c';
+  src: local('M_PLUS_Rounded_1c/MPLUSRounded1c-Light.ttf'), url(./assets/fonts/M_PLUS_Rounded_1c/MPLUSRounded1c-Light.ttf) format('ttf');
+  font-weight: 200;
+}
+
+/* Regular Weight */
+@font-face {
+  font-family: 'M_PLUS_Rounded_1c';
+  src: local('M_PLUS_Rounded_1c/MPLUSRounded1c-Regular.ttf'), url(./assets/fonts/M_PLUS_Rounded_1c/MPLUSRounded1c-Regular.ttf) format('ttf');
+  font-weight: 400;
+}
+
+/* Medium Weight */
+@font-face {
+  font-family: 'M_PLUS_Rounded_1c';
+  src: local('M_PLUS_Rounded_1c/MPLUSRounded1c-Medium.ttf'), url(./assets/fonts/M_PLUS_Rounded_1c/MPLUSRounded1c-Medium.ttf) format('ttf');
+  font-weight: 500;
+}
+
+/* Bold Weight */
+@font-face {
+  font-family: 'M_PLUS_Rounded_1c';
+  src: local('M_PLUS_Rounded_1c/MPLUSRounded1c-Bold.ttf'), url(./assets/fonts/M_PLUS_Rounded_1c/MPLUSRounded1c-Bold.ttf) format('ttf');
+  font-weight: 500;
+}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
