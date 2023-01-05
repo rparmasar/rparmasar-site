@@ -2,10 +2,12 @@
     border-color: var(--primary);
     color: var(--primary);
     border-radius: 2rem;
+    white-space: nowrap;
 }
 
 .cta-btn-outline-secondary{
     border-color: var(--secondary);
     color: var(--secondary);
     border-radius: 2rem;
+    white-space: nowrap;
 }

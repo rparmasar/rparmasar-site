@@ -10,17 +10,20 @@ import './Jumbotron.css';
 import PenroseTriangle from '../../assets/images/landing-pg-penrose-triangle.svg';
 import CTAButton from '../CTAButton/CTAButton';
 
+// d-flex d-m-flex d-l-flex d-xl-flex d-xxl-flex
+// d-flex d-xs-none d-s-none
+
 export default function Jumbotron() {
   return (
     <Container className='jumbotron-container'>
         <div className='d-flex jumbotron-row-container'>
           <Row className='gx-5'>
-              <Col xs={12} md={8} className=''>
+              <Col xs={12} md={8} className='mb-4'>
                   <JumbotronTagline/>
               </Col>
               {/* TODO: Make this resize properly / constrain size */}
-              <Col md={4} className=''>
-                  <div className='d-none d-m-block d-l-block d-xl-block d-xxl-block jumbotron-img-container'>
+              <Col md={4} className='d-none d-md-flex justify-content-center align-items-center'>
+                  <div className='jumbotron-img-container'>
                     <Image src={PenroseTriangle} className='jumbotron-img img-fluid'/>
                   </div>
               </Col>

@@ -39,7 +39,7 @@ export default function JumbotronTagline() {
                 </div>
             </Col>
         </Row>
-        <Row>
+        <Row className='jumbotron-tagline-cta-btn-container'>
             <Col md={6} className='jumbotron-tagline-cta-btn'>
                 <CTAButton outline={true} level='primary' text={'Explore Projects'}/>
             </Col>

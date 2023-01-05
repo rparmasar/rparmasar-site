@@ -9,12 +9,20 @@
 }
 
 .jumbotron-img-container {
-    /* justify-content: center;
-    align-items: center; */
-    width: auto;
-    height: 25%;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
 }
 
 .jumbotron-img {
     object-fit: contain;
+}
+
+@media only screen and (max-width: 576px) {
+    .jumbotron-img-container {
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
+    
 }
