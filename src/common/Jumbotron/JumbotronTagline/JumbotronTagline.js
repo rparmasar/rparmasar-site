@@ -1,6 +1,5 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
-import Stack from 'react-bootstrap/Stack';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
@@ -23,8 +22,8 @@ export default function JumbotronTagline() {
         <Row>
             <Col>
                 <div className='jumbotron-tagline-typewriter-container'>
-                    <h4 className='jumbotron-tagline-pre_typewriter'>I'm passionate about </h4>
-                    <h4><Typewriter
+                    <h5 className='jumbotron-tagline-pre_typewriter'>I'm passionate about </h5>
+                    <h5><Typewriter
                         className='jumbotron-tagline-typewriter'
                         options={{
                             strings: [
@@ -35,7 +34,7 @@ export default function JumbotronTagline() {
                             autoStart: true,
                             loop: true,
                         }}
-                    /></h4>
+                    /></h5>
                 </div>
             </Col>
         </Row>

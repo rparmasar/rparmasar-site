@@ -8,7 +8,6 @@ import JumbotronTagline from './JumbotronTagline/JumbotronTagline';
 import './Jumbotron.css';
 
 import PenroseTriangle from '../../assets/images/landing-pg-penrose-triangle.svg';
-import CTAButton from '../CTAButton/CTAButton';
 
 // d-flex d-m-flex d-l-flex d-xl-flex d-xxl-flex
 // d-flex d-xs-none d-s-none

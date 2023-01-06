@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 
 import './CTAButton.css';
 
-export default function CTAButton({ outline, level, text }) {
+export default function CTAButton({ outline, level, text, className=''}) {
     let target_level = '';
     // Figure out which colour we want to use based on level
     switch (level) {
@@ -19,16 +19,16 @@ export default function CTAButton({ outline, level, text }) {
             target_level = 'primary';
             break;
     }
-    
+
     if (outline) {
         return(
-            <Button className={`cta-btn-outline-${target_level}`} variant='outline-primary'>
+            <Button className={className ? `cta-btn-outline-${target_level} ${className}` : `cta-btn-outline-${target_level}`} variant='outline-primary'>
                 {text}
             </Button>
         )
     } else {
         return(
-            <Button className={`cta-btn-${target_level}`} variant='primary'>
+            <Button className={className ? `cta-btn-${target_level} ${className}` : `cta-btn-${target_level}` } variant='primary'>
                 {text}
             </Button>
         )

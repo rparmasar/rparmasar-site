@@ -1,13 +1,34 @@
-.cta-btn-outline-primary{
+.cta-btn-outline-primary {
     border-color: var(--primary);
     color: var(--primary);
     border-radius: 2rem;
     white-space: nowrap;
 }
 
-.cta-btn-outline-secondary{
+.cta-btn-primary {
+    background-color: var(--primary);
+    color: var(--main-txt);
+    border-radius: 2rem;
+    white-space: nowrap;
+}
+
+.cta-btn-outline-primary:hover, .cta-btn-outline-primary:focus, .cta-btn-outline-primary:active {
+    background-color: var(--primary);
+    color: var(--main-txt);
+    border-radius: 2rem;
+    white-space: nowrap;
+}
+
+.cta-btn-outline-secondary {
     border-color: var(--secondary);
     color: var(--secondary);
+    border-radius: 2rem;
+    white-space: nowrap;
+}
+
+.cta-btn-outline-secondary:hover, .cta-btn-outline-secondary:focus, .cta-btn-outline-secondary:active {
+    background-color: var(--secondary);
+    color: var(--main-txt);
     border-radius: 2rem;
     white-space: nowrap;
 }
