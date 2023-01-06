@@ -1,10 +1,13 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
+import Stack from 'react-bootstrap/Stack';
+import Image from 'react-bootstrap/Image';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 import './Footer.css';
 import CTAButton from '../CTAButton/CTAButton';
+import AboutBlankIcon from '../../assets/images/section-icons/about_blank_icon.svg';
 
 export default function Footer() {
   return (
@@ -20,7 +23,9 @@ export default function Footer() {
                 <Row className='justify-content-center footer-contact-inner-container'>
                     <h2 className='footer-contact-header'>CONNECT WITH ME</h2>
                     <p className='footer-contact-content'>Want to chat about a project, collaborate, or just say hello?</p>
-                    <p className='footer-contact-content'>Email me at <a>rajeev@parmasar.com</a> or send me a message.</p>
+                    <p className='footer-contact-content'>
+                        Email me at <a href = "mailto: rajeev@parmasar.com" className='footer-contact-email-link'>rajeev@parmasar.com</a> or send me a message.
+                    </p>
                     <CTAButton outline={true} level='primary' text={'Send a Message'} className='footer-contact-cta-btn'/>
                 </Row>
                 <Row className='justify-content-center footer-contact-inner-container'>
@@ -33,7 +38,16 @@ export default function Footer() {
             <Col className='mt-5 footer-about-col'>
                 <Row className='justify-content-center footer-contact-inner-container'>
                     <h2 className='footer-contact-header'>MY SOCIALS</h2>
-                    
+                    <Stack direction='horizontal' gap={2} className='align-items-baseline footer-social-link-container'>
+                        <a href='https://www.linkedin.com/in/rajeev-parmasar-b20352187/'
+                        className='footer-contact-content'>LinkedIn</a>
+                        <Image src={AboutBlankIcon} className='footer-socials-img'/>
+                    </Stack>
+                    <Stack direction='horizontal' gap={2} className='align-items-baseline footer-social-link-container'>
+                        <a href='https://github.com/rparmasar'
+                        className='footer-contact-content'>Github</a>
+                        <Image src={AboutBlankIcon} className='footer-socials-img'/>
+                    </Stack>
                 </Row>
             </Col>
         </Row>

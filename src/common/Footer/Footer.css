@@ -33,11 +33,21 @@
     .footer-contact-cta-btn {
         margin-top: 1%;
     }
+    
+    .footer-social-link-container {
+        margin-top: 2%;
+        margin-bottom: 3%;
+    }
 }
 
 @media only screen and (min-width: 768px) {
     .footer-inner-container {
         flex-wrap: nowrap;
+    }
+    
+    .footer-social-link-container {
+        margin-top: 2%;
+        margin-bottom: 3%;
     }
 }
 
@@ -53,9 +63,19 @@
 .footer-contact-content {
     font-weight: 100;
     font-size: 0.875em;
+    color: var(--main-txt);
 }
 
 .footer-contact-cta-btn {
     font-size: 0.875em;
     max-width: fit-content;
+}
+
+.footer-contact-email-link {
+    color: var(--main-txt);
+    
+}
+
+.footer-socials-img {
+    width: 1em;
 }
