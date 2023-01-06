@@ -52,7 +52,7 @@ body {
 @font-face {
   font-family: 'M_PLUS_Rounded_1c';
   src: local('M_PLUS_Rounded_1c/MPLUSRounded1c-Bold.ttf'), url(./assets/fonts/M_PLUS_Rounded_1c/MPLUSRounded1c-Bold.ttf) format('ttf');
-  font-weight: 500;
+  font-weight: 600;
 }
 
 
