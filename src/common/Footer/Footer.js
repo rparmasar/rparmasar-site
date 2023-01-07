@@ -11,8 +11,8 @@ import AboutBlankIcon from '../../assets/images/section-icons/about_blank_icon.s
 
 export default function Footer() {
   return (
-    <Container className='footer-container'>
-        <Row xs={1} md={3} className='footer-inner-container'>
+    <Container className='footer-container' fluid>
+        <Row xs={1} md={3} className='footer-inner-container justify-content-between'>
             <Col className='mt-5 footer-about-col'>
                 <h2 className='footer-about-header'>Rajeev Parmasar</h2>
                 <p className='footer-about-content'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque molestie efficitur lorem, a tempus leo sollicitudin sit amet.</p>

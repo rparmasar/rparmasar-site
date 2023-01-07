@@ -15,17 +15,17 @@ const SAMPLE_TEXT = 'Maecenas consequat lectus in sapien laoreet accumsan. Cras 
 
 const PLACEHOLDER_ICONS = [Placeholder, Placeholder, Placeholder, Placeholder];
 
-export default function Section({header_type='md', header_text='Header Name', body_text=SAMPLE_TEXT, body_image=ProjectImagePlaceholder, include_cta_bw=false, icon_list=PLACEHOLDER_ICONS}, className) {
+export default function Section({header_type='md', header_text='Header Name', body_text=SAMPLE_TEXT, body_image=ProjectImagePlaceholder, include_cta_bw=false, icon_list=PLACEHOLDER_ICONS}, className='') {
   return (
-    <Container className={`section-container ${className}`}>
+    <Container className={className ? `section-container ${className}`: 'section-container'}>
         <Row className=''>
-            <Col md={7}>
+            <Col md={7} lg={8} xl={9}>
                 <div>
                     <Header type={header_type} text={header_text} className='section-body-header-container'/>
                     <div className='section-body-text'>{body_text}</div>
                 </div>
             </Col>
-            <Col md={5}>
+            <Col md={5} lg={4} xl={3}>
                 <div className='section-img-container'>
                     <Image className='section-img' src={body_image}/>
                 </div>
@@ -34,25 +34,25 @@ export default function Section({header_type='md', header_text='Header Name', bo
         {include_cta_bw &&
             <>
                 <Row>
-                    <Col md={7}>
+                    <Col md={7} lg={8} xl={9}>
 
                     </Col>
-                    <Col md={5}>
+                    <Col md={5} lg={4} xl={3}>
                         <div className='section-built-with-text'>POWERED BY</div>
                     </Col>
                 </Row>
                 <Row className='section-bottom-row-container'>
-                    <Col md={7} className='section-body-cta-btn-container'>
+                    <Col md={7} lg={8} xl={9} className='section-body-cta-btn-container'>
                         <div>
                             <CTAButton outline={true} level='primary' text={'View Project'} className='section-body-cta-btn'/>
                             <CTAButton outline={true} level='source' text={'Explore Source'} className='section-body-cta-btn'/>
                         </div>
                     </Col>
-                    <Col md={5}>
+                    <Col md={5} lg={4} xl={3}>
                         <div className='section-built-with-icon-container'>
                             {
-                                icon_list.map(icon_path => {
-                                    return(<Image className='section-built-with-icon' src={icon_path}/>)
+                                icon_list.map((icon_path, idx) => {
+                                    return(<Image key={idx} className='section-built-with-icon' src={icon_path}/>)
                                 })
                             }
                         </div>

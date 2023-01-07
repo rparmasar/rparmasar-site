@@ -61,4 +61,8 @@
     .section-body-cta-btn-container {
         margin-top: 1rem;
     }
+
+    .section-built-with-icon-container, .section-img-container {
+        float: none!important;
+    }
 }
