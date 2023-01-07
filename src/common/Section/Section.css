@@ -1,5 +1,34 @@
 .section-container {
-    width: auto;
-    height: 40vh;
-    /* background-color: dimgray; */
+    padding-top: 2rem;
+    max-height: 400px;
+}
+
+.section-body-header-container {
+    margin-bottom: 0.5rem;
+    margin-left: 0 !important;
+}
+
+.section-body-text {
+    margin-bottom: 1rem;
+}
+
+.section-body-cta-btn {
+    margin-right: 1rem;
+}
+
+.section-img-container {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.section-img {
+    max-width: 300px;
+    width: 100%;
+    object-fit: contain;
+}
+
+@media only screen and (max-width: 425px) {
+    .section-img {
+        max-width: 100%;
+    }
 }

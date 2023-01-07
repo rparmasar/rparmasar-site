@@ -2,7 +2,7 @@ import React from 'react'
 
 import './Header.css';
 
-export default function Header({type='lg', text}) {
+export default function Header({type='lg', text, className}) {
     let header_class_name = ''
     switch (type) {
         case 'sm':
@@ -22,6 +22,6 @@ export default function Header({type='lg', text}) {
     }
 
   return (
-    <h2 className={`${header_class_name}`}>{text}</h2>
+    <h2 className={`${header_class_name} ${className}`}>{text}</h2>
   )
 }

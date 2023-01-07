@@ -14,6 +14,10 @@ export default function CTAButton({ outline, level, text, className=''}) {
         case 'secondary':
             target_level = 'secondary';
             break;
+        
+        case 'source':
+            target_level = 'source';
+            break;
 
         default:
             target_level = 'primary';
@@ -22,13 +26,13 @@ export default function CTAButton({ outline, level, text, className=''}) {
 
     if (outline) {
         return(
-            <Button className={className ? `cta-btn-outline-${target_level} ${className}` : `cta-btn-outline-${target_level}`} variant='outline-primary'>
+            <Button className={className ? `cta-btn cta-btn-outline-${target_level} ${className}` : `cta-btn cta-btn-outline-${target_level}`} variant='outline-primary'>
                 {text}
             </Button>
         )
     } else {
         return(
-            <Button className={className ? `cta-btn-${target_level} ${className}` : `cta-btn-${target_level}` } variant='primary'>
+            <Button className={className ? `cta-btn cta-btn-${target_level} ${className}` : `cta-btn cta-btn-${target_level}` } variant='primary'>
                 {text}
             </Button>
         )

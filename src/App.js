@@ -4,6 +4,7 @@ import NavBar from './common/NavBar/NavBar';
 import './App.css';
 import Footer from './common/Footer/Footer';
 import Section from './common/Section/Section';
+import SectionImageCard from './common/Section/SectionImage/SectionImage';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       {/* <Jumbotron/> */}
       {/* <Footer/> */}
       <Section/>
+      {/* <SectionImageCard/> */}
     </div>
   );
 }
