@@ -22,9 +22,18 @@
 }
 
 .section-img {
-    max-width: 300px;
+    max-width: 250px;
     width: 100%;
     object-fit: contain;
+}
+
+.section-built-with-text {
+    font-weight: 600;
+    font-size: 0.75em;
+}
+
+.section-bottom-row-container {
+    align-items: center;
 }
 
 @media only screen and (max-width: 425px) {
