@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <NavBar/>
       {/* <Jumbotron/> */}
-      <Section/>
+      <Section include_cta_bw/>
 
       {/* <Footer/> */}
     </div>
