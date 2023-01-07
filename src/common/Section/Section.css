@@ -1,6 +1,5 @@
 .section-container {
     padding-top: 2rem;
-    max-height: 400px;
 }
 
 .section-body-header-container {
@@ -32,12 +31,34 @@
     font-size: 0.75em;
 }
 
+.section-built-with-icon {
+    height: 64px;
+    width: 64px;
+    padding: 0.25rem;
+}
+
+.section-built-with-icon-container {
+    margin-left: -0.25rem;
+}
+
 .section-bottom-row-container {
     align-items: center;
 }
 
 @media only screen and (max-width: 425px) {
+    .section-container {
+        height: fit-content;
+    }
+
     .section-img {
         max-width: 100%;
+    }
+    
+    .section-bottom-row-container {
+        flex-direction: column-reverse;
+    }
+    
+    .section-body-cta-btn-container {
+        margin-top: 1rem;
     }
 }

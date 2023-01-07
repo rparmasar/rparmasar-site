@@ -11,7 +11,7 @@ import ProjectImagePlaceholder from '../../assets/images/img-card-placeholder.pn
 import Placeholder from '../../assets/images/img-card-placeholder.svg';
 import CTAButton from '../CTAButton/CTAButton';
 
-export default function Section({header_type, header_text, body_text, body_image, align_items}) {
+export default function Section({header_type, header_text, body_text, body_image, section_type}) {
   return (
     <Container className='section-container'>
         <Row className=''>
@@ -36,18 +36,18 @@ export default function Section({header_type, header_text, body_text, body_image
             </Col>
         </Row>
         <Row className='section-bottom-row-container'>
-            <Col md={7}>
-                <div className=''>
+            <Col md={7} className='section-body-cta-btn-container'>
+                <div>
                     <CTAButton outline={true} level='primary' text={'View Project'} className='section-body-cta-btn'/>
                     <CTAButton outline={true} level='source' text={'Explore Source'} className='section-body-cta-btn'/>
                 </div>
             </Col>
             <Col md={5}>
-                <div>
-                    <Image className='section-img-card-built-with-icon' src={Placeholder}/>
-                    <Image className='section-img-card-built-with-icon' src={Placeholder}/>
-                    <Image className='section-img-card-built-with-icon' src={Placeholder}/>
-                    <Image className='section-img-card-built-with-icon' src={Placeholder}/>
+                <div className='section-built-with-icon-container'>
+                    <Image className='section-built-with-icon' src={Placeholder}/>
+                    <Image className='section-built-with-icon' src={Placeholder}/>
+                    <Image className='section-built-with-icon' src={Placeholder}/>
+                    <Image className='section-built-with-icon' src={Placeholder}/>
                 </div>
             </Col>
         </Row>
