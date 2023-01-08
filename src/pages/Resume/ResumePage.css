@@ -1,0 +1,58 @@
+.resume-container{
+    margin-top: 2rem;
+}
+
+.resume-preamble-container {
+    background-color: #3f3f3f;
+    width: 100vw;
+}
+
+.resume-preamble-text {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.resume-cta-btn {
+    margin-top: 0.5rem;
+    width: fit-content;
+}
+
+.resume-cta-container {
+    padding-bottom: 2rem;
+}
+
+.linkedin-btn {
+    background-color: #0172B1;
+}
+
+.resume-iframe-container {
+    margin-top: 3rem;
+}
+
+.resume-iframe {
+    height: 100vh;
+    background-color: #3f3f3f;
+    /* height: 50vh; */
+}
+
+@media only screen and (min-width: 768px) {
+    .on-right {
+        margin-left: auto;
+    }
+    
+}
+
+@media only screen and (max-width: 425px) {
+    .resume-preamble-text {
+        margin-top: 2rem;
+        padding-right: 2.5rem;
+    }
+
+    .resume-cta-container {
+        flex-direction: column-reverse;
+    }
+    
+    .on-right {
+        margin-bottom: 1.25rem;
+    }
+}

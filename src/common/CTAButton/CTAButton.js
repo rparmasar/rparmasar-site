@@ -1,10 +1,13 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
+import { Link } from 'react-router-dom';
 
 import './CTAButton.css';
 
-export default function CTAButton({ outline, level, text, className=''}) {
+export default function CTAButton({ outline=false, level, text, className='', button_href='', button_route='/', containerClassname=''}) {
+    // NOTE: Use ONE of `button_route` (internal links) or `button_href` (external links)
     let target_level = '';
+    let btn_elem = <></>;
     // Figure out which colour we want to use based on level
     switch (level) {
         case 'primary':
@@ -25,16 +28,24 @@ export default function CTAButton({ outline, level, text, className=''}) {
     }
 
     if (outline) {
-        return(
-            <Button className={className ? `cta-btn cta-btn-outline-${target_level} ${className}` : `cta-btn cta-btn-outline-${target_level}`} variant='outline-primary'>
-                {text}
-            </Button>
-        )
+        btn_elem = <Button className={className ? `cta-btn cta-btn-outline-${target_level} ${className}` : `cta-btn cta-btn-outline-${target_level}`} variant='outline-primary'>
+            {text}
+        </Button>
     } else {
+        btn_elem = <Button className={className ? `cta-btn cta-btn-${target_level} ${className}` : `cta-btn cta-btn-${target_level}` } variant='primary'>
+            {text}
+        </Button>
+    }
+
+    if (button_href) {
         return(
-            <Button className={className ? `cta-btn cta-btn-${target_level} ${className}` : `cta-btn cta-btn-${target_level}` } variant='primary'>
-                {text}
-            </Button>
+            <a className={`cta-btn-container ${containerClassname}`} href={button_href}>{ btn_elem }</a>
+        )
+    }
+
+    if (button_route) {
+        return(
+            <Link className={`cta-btn-container ${containerClassname}`} to={button_route}>{ btn_elem }</Link>
         )
     }
 

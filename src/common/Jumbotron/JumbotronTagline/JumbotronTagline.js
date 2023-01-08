@@ -40,10 +40,10 @@ export default function JumbotronTagline() {
         </Row>
         <Row className='jumbotron-tagline-cta-btn-container'>
             <Col md={6} className='jumbotron-tagline-cta-btn'>
-                <CTAButton outline={true} level='primary' text={'Explore Projects'}/>
+                <CTAButton outline={true} level='primary' text={'Explore Projects'} button_route='/projects'/>
             </Col>
             <Col md={6}>
-                <CTAButton outline={true} level='secondary' text={'View Resume'}/>
+                <CTAButton outline={true} level='secondary' text={'View Resume'} button_route='/resume'/>
             </Col>
         </Row>
     </Container>

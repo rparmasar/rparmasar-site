@@ -3,6 +3,10 @@
     white-space: nowrap;
 }
 
+.cta-btn-container {
+    width: fit-content;
+}
+
 .cta-btn-outline-primary {
     border-color: var(--primary);
     color: var(--primary);
