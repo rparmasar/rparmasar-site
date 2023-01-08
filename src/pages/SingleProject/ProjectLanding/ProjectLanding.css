@@ -1,0 +1,28 @@
+.pl-container {
+    /* background-image: linear-gradient(rgba(53, 50, 50, 0.815), rgba(12, 12, 12, 0.657)) */
+}
+
+.pl-content-container {
+    height: 90vh;
+    width: 80%;
+}
+
+.pl-content-header {
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+}
+
+.pl-cta-btn-container {
+    max-width: fit-content;
+    margin-top: 2rem;
+}
+
+.pl-cta-btn {
+    margin-right: 1rem;
+}
+
+@media only screen and (max-width: 320px) {
+    .pl-cta-btn {
+        margin-bottom: 1rem;
+    }
+}

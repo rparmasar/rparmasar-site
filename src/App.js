@@ -9,6 +9,8 @@ import AboutMePage from './pages/AboutMe/AboutMePage';
 import ResumePage from './pages/Resume/ResumePage';
 
 import './App.css';
+import SingleProjectPage from './pages/SingleProject/SingleProjectPage';
+import NotFoundPage from './pages/NotFound/NotFoundPage';
 
 function App() {
   const show_footer = useLocation().pathname !== '/' ;
@@ -21,6 +23,8 @@ function App() {
           <Route path='/projects' element={<ProjectListPage />} />
           <Route path='/about' element={<AboutMePage />} />
           <Route path='/resume' element={<ResumePage />} />
+          <Route path='/test' element={<SingleProjectPage />} />
+          <Route path='/*' element={<NotFoundPage />} />
         </Routes>
         {show_footer && <Footer />}
       </>

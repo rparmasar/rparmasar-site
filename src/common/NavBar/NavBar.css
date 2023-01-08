@@ -31,6 +31,7 @@
     
     .navbar-cta-btn {
         margin-top: 5%;
+        margin-left: 0;
         margin-bottom: 1%;
         max-width: fit-content;
         width: max-content;

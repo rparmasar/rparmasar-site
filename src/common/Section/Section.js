@@ -15,7 +15,7 @@ const SAMPLE_TEXT = 'Maecenas consequat lectus in sapien laoreet accumsan. Cras 
 
 const PLACEHOLDER_ICONS = [Placeholder, Placeholder, Placeholder, Placeholder];
 
-export default function Section({header_type='md', header_text='Header Name', body_text=SAMPLE_TEXT, body_image=ProjectImagePlaceholder, include_cta_bw=false, icon_list=PLACEHOLDER_ICONS}, className='') {
+export default function Section({header_type='md', header_text='Header Name', body_text=SAMPLE_TEXT, body_image=ProjectImagePlaceholder, include_cta_bw=false, icon_list=PLACEHOLDER_ICONS, className=''}) {
   return (
     <Container className={className ? `section-container ${className}`: 'section-container'}>
         <Row className=''>
