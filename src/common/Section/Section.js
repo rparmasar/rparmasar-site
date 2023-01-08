@@ -19,10 +19,16 @@ export default function Section({header_type='md', header_text='Header Name', bo
   return (
     <Container className={className ? `section-container ${className}`: 'section-container'}>
         <Row className=''>
-            <Col md={7} lg={8} xl={9}>
+            <Col md={7} lg={8} xl={9} className='d-flex align-items-center'>
                 <div>
-                    <Header type={header_type} text={header_text} className='section-body-header-container'/>
-                    <div className='section-body-text'>{body_text}</div>
+                    {header_type === 'none' ? 
+                        <div className='section-body-text'>{body_text}</div>
+                    :
+                        <>
+                            <Header type={header_type} text={header_text} className='section-body-header-container'/>
+                            <div className='section-body-text'>{body_text}</div>
+                        </>
+                    }
                 </div>
             </Col>
             <Col md={5} lg={4} xl={3}>

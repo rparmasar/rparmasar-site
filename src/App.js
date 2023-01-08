@@ -5,7 +5,7 @@ import NavBar from './common/NavBar/NavBar';
 import Footer from './common/Footer/Footer';
 
 import ProjectListPage from './pages/ProjectList/ProjectListPage';
-import AboutMe from './pages/AboutMe/AboutMePage';
+import AboutMePage from './pages/AboutMe/AboutMePage';
 import ResumePage from './pages/Resume/ResumePage';
 
 import './App.css';
@@ -19,7 +19,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Jumbotron />} />
           <Route path='/projects' element={<ProjectListPage />} />
-          <Route path='/about' element={<AboutMe />} />
+          <Route path='/about' element={<AboutMePage />} />
           <Route path='/resume' element={<ResumePage />} />
         </Routes>
         {show_footer && <Footer />}
