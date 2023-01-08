@@ -22,8 +22,8 @@ export default function JumbotronTagline() {
         <Row>
             <Col>
                 <div className='jumbotron-tagline-typewriter-container'>
-                    <h5 className='jumbotron-tagline-pre_typewriter'>I'm passionate about </h5>
-                    <h5><Typewriter
+                    <h5 className='jumbotron-tagline-pre_typewriter'>I'm passionate about 
+                    <Typewriter
                         className='jumbotron-tagline-typewriter'
                         options={{
                             strings: [
