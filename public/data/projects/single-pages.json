@@ -1,0 +1,35 @@
+{
+    "data": [
+        {
+            "project_id": 1,
+            "content": {
+                "jumbotron": {
+                    "header_text": "Arts Printers",
+                    "body_text": "A real-time list of printers maintained by the Arts Computing Office at the University of Waterloo organized by department, building and model.",
+                    "background_image": "images/jumbotron/printer.jpg",
+                    "primary_cta": false,
+                    "secondary_cta": {
+                        "href": "https://github.com/rparmasar/artsprinters",
+                        "text": "Explore Source"
+                    }
+                },
+                "why_build_this": {
+                    "body_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque molestie efficitur lorem, a tempus leo sollicitudin sit amet. Quisque sed sem suscipit, malesuada ante eget, suscipit lorem. Integer magna augue, fringilla eget leo sed, lacinia fringilla tellus. Sed in felis euismod, finibus odio id, pulvinar nunc."
+                },
+                "challenges": {
+                    "body_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque molestie efficitur lorem, a tempus leo sollicitudin sit amet. Quisque sed sem suscipit, malesuada ante eget, suscipit lorem. Integer magna augue, fringilla eget leo sed, lacinia fringilla tellus. Sed in felis euismod, finibus odio id, pulvinar nunc."
+                },
+                "learnings": {
+                    "body_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque molestie efficitur lorem, a tempus leo sollicitudin sit amet. Quisque sed sem suscipit, malesuada ante eget, suscipit lorem. Integer magna augue, fringilla eget leo sed, lacinia fringilla tellus. Sed in felis euismod, finibus odio id, pulvinar nunc."
+                },
+                "additional_sections": [
+                    {
+                        "header_text": "",
+                        "body_text": "",
+                        "image": ""
+                    }
+                ]
+            }
+        }
+    ]
+}

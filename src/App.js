@@ -20,10 +20,15 @@ function App() {
         <NavBar />
         <Routes>
           <Route path='/' element={<Jumbotron />} />
+          
           <Route path='/projects' element={<ProjectListPage />} />
+          <Route path='/projects/:name' element={<SingleProjectPage />} />
+          
           <Route path='/about' element={<AboutMePage />} />
           <Route path='/resume' element={<ResumePage />} />
+          
           <Route path='/test' element={<SingleProjectPage />} />
+
           <Route path='/*' element={<NotFoundPage />} />
         </Routes>
         {show_footer && <Footer />}

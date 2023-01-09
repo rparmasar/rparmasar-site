@@ -4,10 +4,11 @@ import { Link } from 'react-router-dom';
 
 import './CTAButton.css';
 
-export default function CTAButton({ outline=false, level, text, className='', button_href='', button_route='/', containerClassname=''}) {
+export default function CTAButton({ outline=false, level, text, className='', button_href='', button_route='/', button_state={}, containerClassname=''}) {
     // NOTE: Use ONE of `button_route` (internal links) or `button_href` (external links)
     let target_level = '';
     let btn_elem = <></>;
+    
     // Figure out which colour we want to use based on level
     switch (level) {
         case 'primary':
@@ -45,7 +46,7 @@ export default function CTAButton({ outline=false, level, text, className='', bu
 
     if (button_route) {
         return(
-            <Link className={`cta-btn-container ${containerClassname}`} to={button_route}>{ btn_elem }</Link>
+            <Link className={`cta-btn-container ${containerClassname}`} to={button_route} state={button_state}>{ btn_elem }</Link>
         )
     }
 

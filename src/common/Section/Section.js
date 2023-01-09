@@ -15,7 +15,7 @@ const SAMPLE_TEXT = 'Maecenas consequat lectus in sapien laoreet accumsan. Cras 
 
 const PLACEHOLDER_ICONS = [Placeholder, Placeholder, Placeholder, Placeholder];
 
-export default function Section({header_type='md', header_text='Header Name', body_text=SAMPLE_TEXT, body_image=ProjectImagePlaceholder, include_cta_bw=false, icon_list=PLACEHOLDER_ICONS, className=''}) {
+export default function Section({project_id='', header_type='md', header_text='Header Name', body_text=SAMPLE_TEXT, img_name='images/img-card-placeholder.png', img_desc='A Placeholder Image of a white rectangle', source_url, include_cta_bw=false, icon_list=PLACEHOLDER_ICONS, className=''}) {
   return (
     <Container className={className ? `section-container ${className}`: 'section-container'}>
         <Row className=''>
@@ -33,7 +33,11 @@ export default function Section({header_type='md', header_text='Header Name', bo
             </Col>
             <Col md={5} lg={4} xl={3}>
                 <div className='section-img-container'>
-                    <Image className='section-img' src={body_image}/>
+                    <Image 
+                        className='section-img'
+                        src={`${process.env.PUBLIC_URL}/${img_name}`}
+                        alt={img_desc}
+                    />
                 </div>
             </Col>
         </Row>
@@ -50,15 +54,22 @@ export default function Section({header_type='md', header_text='Header Name', bo
                 <Row className='section-bottom-row-container'>
                     <Col md={7} lg={8} xl={9} className='section-body-cta-btn-container'>
                         <div>
-                            <CTAButton outline={true} level='primary' text={'View Project'} className='section-body-cta-btn'/>
-                            <CTAButton outline={true} level='source' text={'Explore Source'} className='section-body-cta-btn'/>
+                            <CTAButton outline={true} level='primary' text={`View ${header_text}`} className='section-body-cta-btn' button_route={header_text} button_state={{"project_id": project_id}}/>
+                            <CTAButton outline={true} level='source' text={'Explore Source'} className='section-body-cta-btn' button_href={source_url}/>
                         </div>
                     </Col>
                     <Col md={5} lg={4} xl={3}>
                         <div className='section-built-with-icon-container'>
                             {
-                                icon_list.map((icon_path, idx) => {
-                                    return(<Image key={idx} className='section-built-with-icon' src={icon_path}/>)
+                                icon_list.map((icon, idx) => {
+                                    return(
+                                        <Image 
+                                            key={idx}
+                                            className='section-built-with-icon'
+                                            src={`${process.env.PUBLIC_URL}/${icon.icon_image}`}
+                                            alt={icon.name} 
+                                        />
+                                    )
                                 })
                             }
                         </div>
