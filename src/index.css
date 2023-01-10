@@ -11,6 +11,11 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
   background-color: var(--main-bg, #030303) !important;
   color: var(--main-txt, #FEFEFE) !important;
   font-family: -apple-system, BlinkMacSystemFont, 'M_PLUS_Rounded_1c', 'Segoe UI', 'Roboto', 'Oxygen',
@@ -60,3 +65,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+/* *{
+  outline: 1px solid red;
+} */
+      

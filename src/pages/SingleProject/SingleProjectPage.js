@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { useLocation } from 'react-router-dom';
 import useLocalData from '../../hooks/useLocalData';
-// import Container from 'react-bootstrap/Container';
+import AdditionalSection from './AdditionalSection/AdditionalSection';
+import FixedSection from './FixedSection/FixedSection';
 
-// import Header from '../../common/Header/Header';
-// import Section from '../../common/Section/Section';
 import ProjectLanding from './ProjectLanding/ProjectLanding';
 
 import './SingleProjectPage.css';
@@ -12,23 +11,24 @@ import './SingleProjectPage.css';
 export default function SingleProjectPage() {
     const { state: { project_id } } = useLocation();
 
-    // Get our JSON data and filter to the correct id
-    const [pageData] = useLocalData("projects/single-pages.json");
-    const filtered_data = pageData.filter(page_obj => page_obj.project_id === project_id)[0];
-
-    // Jumbotron props
-    const { background_image, header_text, body_text, primary_cta, secondary_cta } = filtered_data.content.jumbotron;
-    
+    // Get our JSON data filtered to the correct id
+    const [pageData] = useLocalData("projects/single-pages.json", project_id);
 
   return (
     <>
-        <ProjectLanding 
-            bg_img_path={background_image}
-            header_text={header_text}
-            body_text={body_text}
-            primary_cta={primary_cta}
-            secondary_cta={secondary_cta}
-        />
+        {pageData && 
+            <>
+                <ProjectLanding 
+                    bg_img_path={pageData.content.jumbotron.background_image}
+                    header_text={pageData.content.jumbotron.header_text}
+                    body_text={pageData.content.jumbotron.body_text}
+                    primary_cta={pageData.content.jumbotron.primary_cta}
+                    secondary_cta={pageData.content.jumbotron.secondary_cta}
+                />
+                <FixedSection />
+                <AdditionalSection />
+            </>
+        }
     </>
   )
 }

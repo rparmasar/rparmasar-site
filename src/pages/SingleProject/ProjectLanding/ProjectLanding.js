@@ -7,9 +7,7 @@ import './ProjectLanding.css';
 import Header from '../../../common/Header/Header';
 import CTAButton from '../../../common/CTAButton/CTAButton';
 
-import test_img from '../../../assets/images/jumbotron-bgs/roulette-wheel-bg.jpg';
-
-export default function ProjectLanding({bg_img_path=test_img, header_text='Project Name', body_text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque molestie efficitur lorem, a tempus leo sollicitudin sit amet.', primary_cta=false, secondary_cta={'text': "Explore Source", 'href': ''}}) {
+export default function ProjectLanding({bg_img_path, header_text='Project Name', body_text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque molestie efficitur lorem, a tempus leo sollicitudin sit amet.', primary_cta=false, secondary_cta={'text': "Explore Source", 'href': ''}}) {
   return (
     <>
         <style type='text/css'>
@@ -17,7 +15,7 @@ export default function ProjectLanding({bg_img_path=test_img, header_text='Proje
                 .pl-container {
                     background-image: 
                     linear-gradient(rgba(13, 10, 10, 0.815), rgba(12, 12, 12, 0.8)),
-                        url(./${bg_img_path});
+                        url(${process.env.PUBLIC_URL}/${bg_img_path});
                     
                     background-size: cover;
                     background-repeat: no-repeat;

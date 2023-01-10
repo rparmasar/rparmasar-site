@@ -7,7 +7,6 @@ import Image from 'react-bootstrap/Image';
 import './Section.css';
 import Header from '../Header/Header';
 
-import ProjectImagePlaceholder from '../../assets/images/img-card-placeholder.png';
 import Placeholder from '../../assets/images/img-card-placeholder.svg';
 import CTAButton from '../CTAButton/CTAButton';
 
@@ -15,10 +14,10 @@ const SAMPLE_TEXT = 'Maecenas consequat lectus in sapien laoreet accumsan. Cras 
 
 const PLACEHOLDER_ICONS = [Placeholder, Placeholder, Placeholder, Placeholder];
 
-export default function Section({project_id='', header_type='md', header_text='Header Name', body_text=SAMPLE_TEXT, img_name='images/img-card-placeholder.png', img_desc='A Placeholder Image of a white rectangle', source_url, include_cta_bw=false, icon_list=PLACEHOLDER_ICONS, className=''}) {
+export default function Section({project_id='', header_type='md', header_text='Header Name', body_text=SAMPLE_TEXT, img_name='images/img-card-placeholder.png', img_desc='A Placeholder Image of a white rectangle', source_url, include_cta_bw=false, icon_list=PLACEHOLDER_ICONS, className='', reverse=false, use_static_img=false}) {
   return (
     <Container className={className ? `section-container ${className}`: 'section-container'}>
-        <Row className=''>
+        <Row className={reverse ? 'd-flex flex-row-reverse': ''}>
             <Col md={7} lg={8} xl={9} className='d-flex align-items-center'>
                 <div>
                     {header_type === 'none' ? 
@@ -33,11 +32,18 @@ export default function Section({project_id='', header_type='md', header_text='H
             </Col>
             <Col md={5} lg={4} xl={3}>
                 <div className='section-img-container'>
-                    <Image 
-                        className='section-img'
-                        src={`${process.env.PUBLIC_URL}/${img_name}`}
-                        alt={img_desc}
-                    />
+                    {use_static_img ?
+                        <Image 
+                            className='section-img'
+                            src={img_name}
+                            alt={img_desc}
+                        /> :
+                        <Image 
+                            className='section-img'
+                            src={`${process.env.PUBLIC_URL}/${img_name}`}
+                            alt={img_desc}
+                        />
+                    }
                 </div>
             </Col>
         </Row>

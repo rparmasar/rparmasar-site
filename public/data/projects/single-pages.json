@@ -6,7 +6,7 @@
                 "jumbotron": {
                     "header_text": "Arts Printers",
                     "body_text": "A real-time list of printers maintained by the Arts Computing Office at the University of Waterloo organized by department, building and model.",
-                    "background_image": "images/jumbotron/printer.jpg",
+                    "background_image": "images/jumbotron-bgs/printer.jpg",
                     "primary_cta": false,
                     "secondary_cta": {
                         "href": "https://github.com/rparmasar/artsprinters",

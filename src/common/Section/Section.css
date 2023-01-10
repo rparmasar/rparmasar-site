@@ -54,7 +54,7 @@
     }
 
     .section-img {
-        max-width: 100%;
+        max-width: 90%;
     }
     
     .section-bottom-row-container {
@@ -64,6 +64,10 @@
     
     .section-body-cta-btn-container {
         margin-top: 1.5rem;
+    }
+
+    .section-body-cta-btn {
+        margin-bottom: 0.5rem;
     }
 
     .section-built-with-icon-container, .section-img-container {
