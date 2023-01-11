@@ -27,6 +27,7 @@ export default function SingleProjectPage() {
                 />
                 <FixedSection />
                 <AdditionalSection />
+                <AdditionalSection />
             </>
         }
     </>
