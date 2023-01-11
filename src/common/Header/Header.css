@@ -23,7 +23,7 @@
 }
 
 .header-underlined-lg {
-    font-size: 3rem;
+    font-size: 2.25rem;
     font-weight: 600;
     border-bottom: 5px solid var(--primary);
     padding-bottom: 4px;
