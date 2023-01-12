@@ -14,20 +14,48 @@
                     }
                 },
                 "why_build_this": {
-                    "body_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque molestie efficitur lorem, a tempus leo sollicitudin sit amet. Quisque sed sem suscipit, malesuada ante eget, suscipit lorem. Integer magna augue, fringilla eget leo sed, lacinia fringilla tellus. Sed in felis euismod, finibus odio id, pulvinar nunc."
+                    "body_text": "<b>Printer related tickets made up near 40% of issues</b> coming to the help desk. Most often, staff at the Faculty of Arts had trouble connecting to (or finding) their department printers and the Arts Computing Office had difficulty keeping track of its printers."
                 },
                 "challenges": {
-                    "body_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque molestie efficitur lorem, a tempus leo sollicitudin sit amet. Quisque sed sem suscipit, malesuada ante eget, suscipit lorem. Integer magna augue, fringilla eget leo sed, lacinia fringilla tellus. Sed in felis euismod, finibus odio id, pulvinar nunc."
+                    "body_text": "<b>This project was the first web-related work I’d ever done</b> so the main challenges were learning the stack - HTML, CSS & JavaScript, developing with accessibility in mind, and learning how to leverage PowerShell as a back-end. "
                 },
                 "learnings": {
-                    "body_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque molestie efficitur lorem, a tempus leo sollicitudin sit amet. Quisque sed sem suscipit, malesuada ante eget, suscipit lorem. Integer magna augue, fringilla eget leo sed, lacinia fringilla tellus. Sed in felis euismod, finibus odio id, pulvinar nunc."
+                    "body_text": "<b>This project made me fall in love with programming</b>. I became comfortable with scripting in PowerShell and was ready to level up my web-development skills as I now had the foundations for HTML, CSS and JavaScript."
                 },
                 "additional_sections": [
                     {
-                        "header_text": "",
-                        "body_text": "",
+                        "header_text": "Accessibility",
+                        "body_text": [
+                            "Accessibility is a top priority within the University’s design principles. The website needed to be compliant to at least a level of AA based on the Web Content Accessibility Guidelines (WCAG) 2.0 (w3.org)",
+                            "The main implication on this solution was that the site needed to be structured in a way such that screen readers can easily describe the on-screen content so that users can interact with the site using solely their keyboard.",
+                            "This is done on a smaller scale through including alternate descriptions of images or tables. On a larger scale, designing with accessibility in mind reinforces good user experience (UX) principles by ensuring that the flow of your site is intuitive and functional.",
+                            "For example, the search bar was placed at the top left of the non-generic content (The header and navbar) because this is usually the starting point for reading English, which reads from left to right, and searching for printers is the most used feature of the website.",
+                            "This project introduced me to the WCAG 2.0 and also to the idea of user-centric design. It sparked a curiosity into UX and general user interface (UI) design principles which still fascinate me up to today."
+                        ],
                         "image": "",
-                        "img_desc": ""
+                        "image_desc": ""
+                    },
+                    {
+                        "header_text": "A Look Inside",
+                        "body_text": [
+                            "The project is deployed as a PowerShell script, scheduled to run daily, on the Arts Computing Office’s (ACO) servers.",
+                            "The script has a few responsibilities like:",
+                            "<ul><li>Fetching a table of printers from our print server and organizing them into an appropriate format.</li><li>Generating an HTML file containing the structure and content of the web page.</li><li>Generating a CSS file for styling according to the University of Waterloo design standards.</li><li>Generating a JavaScript file which powers the interactivity of the web page.</li><ul>"
+                        ],
+                        "image": "",
+                        "image_desc": ""
+                    },
+                    {
+                        "header_text": "The Result",
+                        "body_text": [
+                            "Here, <b>a user is anyone that wants to print something in any building within the Faculty of Arts</b>.",
+                            "Through this site, <b>users were able to easily locate the printer nearest to them</b>. Staff members with work laptops were able to quickly install their department printers by using the “Installation Help” button and effortlessly copy-paste the printer’s path, required for their installation.",
+                            "On our end, we had much less printer-related issues and were able to spend more time on our main project - upgrading staff laptops from Windows 7 to Windows 10.",
+                            "Since it is deployed within the Arts Computing Office’s servers, users would need to be connected to the campus WiFi or use the University's VPN. If you meet that criteria, you can view the site at Printing, scanning, copying | Arts Computing Office (uwaterloo.ca).",
+                            "If not, don’t worry as there a picture of the site below."
+                        ],
+                        "image": "images/section-images/artsprinters-screenshot.png",
+                        "image_desc": "User Interface showing a table of printers organized by name, department, location and model."
                     }
                 ]
             }

@@ -25,9 +25,21 @@ export default function SingleProjectPage() {
                     primary_cta={pageData.content.jumbotron.primary_cta}
                     secondary_cta={pageData.content.jumbotron.secondary_cta}
                 />
-                <FixedSection />
-                <AdditionalSection />
-                <AdditionalSection />
+                <FixedSection
+                    why_build_body_text={pageData.content.why_build_this.body_text}
+                    challenges_body_text={pageData.content.challenges.body_text}
+                    learnings_body_text={pageData.content.learnings.body_text}
+                />
+                {pageData.content.additional_sections.map(add_sec => {
+                    return(
+                        <AdditionalSection 
+                            header_text={add_sec.header_text}
+                            body_text_arr={add_sec.body_text}
+                            image={add_sec.image}
+                            image_desc={add_sec.image_desc}
+                        />
+                    )
+                })}
             </>
         }
     </>
