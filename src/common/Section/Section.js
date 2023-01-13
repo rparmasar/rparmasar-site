@@ -9,6 +9,7 @@ import Header from '../Header/Header';
 
 import Placeholder from '../../assets/images/img-card-placeholder.svg';
 import CTAButton from '../CTAButton/CTAButton';
+import { Interweave } from 'interweave';
 
 const SAMPLE_TEXT = 'Maecenas consequat lectus in sapien laoreet accumsan. Cras a lacinia eros, ac euismod sapien. Aenean dapibus dui sed augue vestibulum convallis. Praesent est magna, venenatis sed dignissim ac, lobortis eget lorem. Maecenas id pellentesque nisi, sit amet molestie urna. Proin at purus nisi.';
 
@@ -17,15 +18,19 @@ const PLACEHOLDER_ICONS = [Placeholder, Placeholder, Placeholder, Placeholder];
 export default function Section({project_id='', header_type='md', header_text='Header Name', body_text=SAMPLE_TEXT, img_name='images/img-card-placeholder.png', img_desc='A Placeholder Image of a white rectangle', source_url, include_cta_bw=false, icon_list=PLACEHOLDER_ICONS, className='', reverse=false, use_static_img=false}) {
   return (
     <Container className={className ? `section-container ${className}`: 'section-container'}>
-        <Row className={reverse ? 'd-flex flex-row-reverse': ''}>
+        <Row className={reverse ? 'd-flex flex-row-reverse align-items-center': 'align-items-center'}>
             <Col md={7} lg={8} xl={9} className='d-flex align-items-center'>
                 <div>
                     {header_type === 'none' ? 
-                        <div className='section-body-text'>{body_text}</div>
+                        <div className='section-body-text'>
+                            <Interweave content={body_text} />
+                        </div>
                     :
                         <>
                             <Header type={header_type} text={header_text} className='section-body-header-container'/>
-                            <div className='section-body-text'>{body_text}</div>
+                            <div className='section-body-text'>
+                                <Interweave content={body_text} />
+                            </div>
                         </>
                     }
                 </div>

@@ -21,7 +21,7 @@
 }
 
 .section-img {
-    max-width: 250px;
+    /* max-width: 200px; */
     width: 100%;
     object-fit: contain;
 }
@@ -33,7 +33,7 @@
 
 .section-built-with-icon {
     height: 64px;
-    width: 64px;
+    /* width: 64px; */
     padding: 0.25rem;
 }
 

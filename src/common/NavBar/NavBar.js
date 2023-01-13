@@ -23,16 +23,16 @@ export default function NavBar() {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse className='justify-content-end'>
             <Nav className="justify-content-end align-items-center">
-                <Nav.Link className='navbar-link'>
+                <Nav.Link eventKey={"1"} className='navbar-link'>
                   <Link className='navbar-link' to='/about'>About Me</Link>
                 </Nav.Link>
-                <Nav.Link className='navbar-link'>
+                <Nav.Link eventKey={"2"} className='navbar-link'>
                   <Link className='navbar-link' to='/projects'>Projects</Link>
                 </Nav.Link>
-                <Nav.Link className='navbar-link' href="#pricing">
+                <Nav.Link eventKey={"3"} className='navbar-link' href="#pricing">
                   <Link className='navbar-link' to='/resume'>Resume</Link>
                 </Nav.Link>
-                <CTAButton outline={false} level='primary' text={'Send a Message'} className='navbar-cta-btn'/>
+                <CTAButton outline={false} level='linkedin' text={'Connect on LinkedIn'} className='navbar-cta-btn' button_href='https://www.linkedin.com/in/rajeev-parmasar-b20352187/'/>
             </Nav>
           </Navbar.Collapse>
         </Container>

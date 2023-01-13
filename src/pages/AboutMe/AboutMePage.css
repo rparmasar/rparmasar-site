@@ -8,3 +8,8 @@
     background-color: #3f3f3f;
     width: 100vw;
 }
+
+.text-container {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}

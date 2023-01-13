@@ -8,7 +8,7 @@ export default function CTAButton({ outline=false, level, text, className='', bu
     // NOTE: Use ONE of `button_route` (internal links) or `button_href` (external links)
     let target_level = '';
     let btn_elem = <></>;
-    
+
     // Figure out which colour we want to use based on level
     switch (level) {
         case 'primary':
@@ -21,6 +21,10 @@ export default function CTAButton({ outline=false, level, text, className='', bu
         
         case 'source':
             target_level = 'source';
+            break;
+        
+        case 'linkedin':
+            target_level = 'linkedin';
             break;
 
         default:

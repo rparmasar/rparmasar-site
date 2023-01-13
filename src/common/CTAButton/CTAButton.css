@@ -17,6 +17,12 @@
     color: var(--main-txt);
 }
 
+.cta-btn-linkedin {
+    background-color: #0172B1;
+    border-color: #0172B1;
+    color: var(--main-txt);
+}
+
 .cta-btn-outline-primary:hover, .cta-btn-outline-primary:focus, .cta-btn-outline-primary:active {
     background-color: var(--primary);
     color: var(--main-txt);
@@ -40,6 +46,17 @@
 .cta-btn-outline-source:hover, .cta-btn-outline-source:focus, .cta-btn-outline-source:active {
     background-color: var(--main-txt);
     border-color: var(--main-txt);
+    color: var(--main-bg);
+}
+
+.cta-btn-outline-linkedin {
+    border-color: #0172B1;
+    color: #0172B1;
+}
+
+.cta-btn-outline-linkedin:hover, .cta-btn-outline-linkedin:focus, .cta-btn-outline-linkedin:active {
+    background-color: #0172B1;
+    border-color: #0172B1;
     color: var(--main-bg);
 }
 

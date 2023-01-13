@@ -27,9 +27,10 @@ export default function JumbotronTagline() {
                         className='jumbotron-tagline-typewriter'
                         options={{
                             strings: [
-                                'problem solving',
                                 'actuarial science',
-                                'software development'
+                                'problem solving',
+                                'software development',
+                                'thinking differently'
                             ],
                             autoStart: true,
                             loop: true,
@@ -43,7 +44,7 @@ export default function JumbotronTagline() {
                 <CTAButton outline={true} level='primary' text={'Explore Projects'} button_route='/projects'/>
             </Col>
             <Col md={6}>
-                <CTAButton outline={true} level='secondary' text={'View Resume'} button_route='/resume'/>
+                <CTAButton outline={true} level='secondary' text={'View Resume'} button_href='https://drive.google.com/file/d/1M9aJUh0KKPB68UiAlTe0qacxKG-NLvQq/preview' />
             </Col>
         </Row>
     </Container>
