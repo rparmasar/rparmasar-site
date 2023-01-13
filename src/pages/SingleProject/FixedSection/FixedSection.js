@@ -1,6 +1,5 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
-import { Interweave } from 'interweave';
 
 import Section from '../../../common/Section/Section';
 
@@ -16,27 +15,21 @@ export default function FixedSection({ why_build_body_text, challenges_body_text
             header_type='lg'
             reverse img_name={WhyBuildIcon}
             use_static_img
-            body_text={
-                <Interweave content={why_build_body_text} />
-            }
+            body_text={why_build_body_text}
             />
         <Section 
             header_text='Challenges'
             header_type='lg'
             img_name={ChallengesIcon}
             use_static_img
-            body_text={
-                <Interweave content={challenges_body_text} />
-            }
+            body_text={challenges_body_text}
             />
         <Section
             header_text='Key Learnings'
             header_type='lg'
             reverse img_name={LearningsIcon}
             use_static_img
-            body_text={
-                <Interweave content={learnings_body_text}/>
-            }
+            body_text={learnings_body_text}
         />
     </Container>
   )

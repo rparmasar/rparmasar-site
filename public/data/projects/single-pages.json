@@ -1,7 +1,7 @@
 {
     "data": [
         {
-            "project_id": 1,
+            "project_id": 2,
             "content": {
                 "jumbotron": {
                     "header_text": "Arts Printers",
@@ -58,6 +58,31 @@
                         "image_desc": "User Interface showing a table of printers organized by name, department, location and model."
                     }
                 ]
+            }
+        },
+        {
+            "project_id": 1,
+            "content": {
+                "jumbotron": {
+                    "header_text": "Roulette Simulator",
+                    "body_text": "Explore the long-term behaviour of various Roulette betting strategies.",
+                    "background_image": "images/jumbotron-bgs/roulette-wheel-bg.jpg",
+                    "primary_cta": false,
+                    "secondary_cta": {
+                        "href": "https://github.com/rparmasar/roulette-simulator",
+                        "text": "Explore Source"
+                    }
+                },
+                "why_build_this": {
+                    "body_text": "<b>Printer related tickets made up near 40% of issues</b> coming to the help desk. Most often, staff at the Faculty of Arts had trouble connecting to (or finding) their department printers and the Arts Computing Office had difficulty keeping track of its printers."
+                },
+                "challenges": {
+                    "body_text": "<b>This project was the first web-related work I’d ever done</b> so the main challenges were learning the stack - HTML, CSS & JavaScript, developing with accessibility in mind, and learning how to leverage PowerShell as a back-end. "
+                },
+                "learnings": {
+                    "body_text": "<b>This project made me fall in love with programming</b>. I became comfortable with scripting in PowerShell and was ready to level up my web-development skills as I now had the foundations for HTML, CSS and JavaScript."
+                },
+                "additional_sections": []
             }
         }
     ]

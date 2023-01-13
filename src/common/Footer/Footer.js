@@ -24,9 +24,9 @@ export default function Footer() {
                     <h2 className='footer-contact-header'>CONNECT WITH ME</h2>
                     <p className='footer-contact-content'>Want to chat about a project, collaborate, or just say hello?</p>
                     <p className='footer-contact-content'>
-                        Email me at <a href = "mailto: rajeev@parmasar.com" className='footer-contact-email-link'>rajeev@parmasar.com</a> or send me a message.
+                        Email me at <a href = "mailto: rajeev@parmasar.com" className='footer-contact-email-link'>rajeev@parmasar.com</a> or send me a message on LinkedIn.
                     </p>
-                    <CTAButton outline={true} level='primary' text={'Send a Message'} className='footer-contact-cta-btn'/>
+                    <CTAButton outline={true} level='linkedin' text={'Connect on LinkedIn'} className='footer-contact-cta-btn' button_href='https://www.linkedin.com/in/rajeev-parmasar-b20352187/' />
                 </Row>
                 <Row className='justify-content-center footer-contact-inner-container'>
                     <h2 className='footer-contact-header'>RESUME</h2>
