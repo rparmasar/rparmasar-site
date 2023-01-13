@@ -44,7 +44,7 @@ export default function CTAButton({ outline=false, level, text, className='', bu
 
     if (button_href) {
         return(
-            <a className={`cta-btn-container ${containerClassname}`} href={button_href}>{ btn_elem }</a>
+            <a className={`cta-btn-container ${containerClassname}`} href={button_href} target="_blank" rel='noreferrer'>{ btn_elem }</a>
         )
     }
 

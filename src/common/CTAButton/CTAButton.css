@@ -57,6 +57,6 @@
 .cta-btn-outline-linkedin:hover, .cta-btn-outline-linkedin:focus, .cta-btn-outline-linkedin:active {
     background-color: #0172B1;
     border-color: #0172B1;
-    color: var(--main-bg);
+    color: var(--main-txt);
 }
 

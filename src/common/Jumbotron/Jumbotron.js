@@ -20,7 +20,6 @@ export default function Jumbotron() {
               <Col xs={12} md={8} className='mb-4'>
                   <JumbotronTagline/>
               </Col>
-              {/* TODO: Make this resize properly / constrain size */}
               <Col md={4} className='d-none d-md-flex justify-content-center align-items-center'>
                   <div className='jumbotron-img-container'>
                     <Image src={PenroseTriangle} className='jumbotron-img img-fluid'/>
