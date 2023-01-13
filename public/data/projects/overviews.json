@@ -35,7 +35,7 @@
                 "body_text": "<b>An online interface designed for realtors to send SMS messages</b> (manually or automatically) <b>through the internet</b>. It's interface is built with React and the backend with ExpressJS (on top of Node JS). It leverages the Twilio API to send and receive messages with a provisioned cell number. MailChimp is used as a database to store lead information.<br/><br/>During use, it was deployed on Heroku via it's command line interface (CLI).",
                 "image": "images/jumbotron-bgs/select-chat-app-login.png",
                 "image_description": "A web interface showing SMS messages between two parties and a list of other chats on the right.",
-                "source_url": "https://github.com/rparmasar/artsprinters",
+                "source_url": "https://github.com/rparmasar/select-chat-app",
                 "icon_list": [
                     {
                         "name": "Twilio",
