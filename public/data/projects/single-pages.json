@@ -1,7 +1,57 @@
 {
     "data": [
         {
+            "project_id": 1,
+            "content": {
+                "jumbotron": {
+                    "header_text": "Roulette Simulator",
+                    "body_text": "Explore the long-term behaviour of various Roulette betting strategies.",
+                    "background_image": "images/jumbotron-bgs/roulette-wheel-bg.jpg",
+                    "primary_cta": false,
+                    "secondary_cta": {
+                        "href": "https://github.com/rparmasar/roulette-simulator",
+                        "text": "Explore Source"
+                    }
+                },
+                "why_build_this": {
+                    "body_text": "My cousins operated a roulette machine in their bar. They would monitor the numbers throughout the day and then play large sums for certain combinations for example, if 0 was played in the previous round, they would play 31 as they said it was almost sure. <b>Assuming the draws are random, this did not make sense to me</b> so I conceptualized this simulator after learning about Monte Carlo Simulations and then built it 2 years later."
+                },
+                "challenges": {
+                    "body_text": "<b>This was my first attempt to properly use an Object-Oriented (OO) design and practice Test Driven Development</b>. Setting up the automated tests with Github Actions also was an obstacle.<br/><br/>A fun fact: I built 90% of this while on a plane to Trinidad."
+                },
+                "learnings": {
+                    "body_text": "<b>Writing tests beforehand was a game changer</b>. It allowed me to really think about the solution before and not while I was implementing it. This let me break larger functionality into unit functions which made developing much easier and <b>I moved away from a pure OO paradigm into a more functional paradigm</b> where classes are used for representing data, but behaviour is handled by functions."
+                },
+                "additional_sections": []
+            }
+        },
+        {
             "project_id": 2,
+            "content": {
+                "jumbotron": {
+                    "header_text": "Select Chat",
+                    "body_text": "An online application for real estate agents to nurture prospective clients via SMS conversations.",
+                    "background_image": "images/jumbotron-bgs/srm-bg.jpg",
+                    "primary_cta": false,
+                    "secondary_cta": {
+                        "href": "https://github.com/rparmasar/select-chat-app",
+                        "text": "Explore Source"
+                    }
+                },
+                "why_build_this": {
+                    "body_text": "At Select Realty Marketing, <b>the main service is optimizing lead generation for real estate agents</b>. As more agents joined, the current spreadsheet-based approach did not scale. We needed a way to manage and nurture prospects easily and for multiple agents."
+                },
+                "challenges": {
+                    "body_text": "This project was <b>my first journey into full-stack development</b>. The first obstacle was building an Express server to fetch data from our CRM (MailChimp). The next obstacle involved sending and receiving SMS messages and displaying them to an interface in real-time using Twilio’s API."
+                },
+                "learnings": {
+                    "body_text": "This project was <b>my first exposure to cloud deployments and proper version control</b> through Heroku and Github. I spent a lot more time doing back-end related work and developed a good foundation on REST API design and simple relational database operations like joins and filtering. "
+                },
+                "additional_sections": []
+            }
+        },
+        {
+            "project_id": 3,
             "content": {
                 "jumbotron": {
                     "header_text": "Arts Printers",
@@ -58,31 +108,6 @@
                         "image_desc": "User Interface showing a table of printers organized by name, department, location and model."
                     }
                 ]
-            }
-        },
-        {
-            "project_id": 1,
-            "content": {
-                "jumbotron": {
-                    "header_text": "Roulette Simulator",
-                    "body_text": "Explore the long-term behaviour of various Roulette betting strategies.",
-                    "background_image": "images/jumbotron-bgs/roulette-wheel-bg.jpg",
-                    "primary_cta": false,
-                    "secondary_cta": {
-                        "href": "https://github.com/rparmasar/roulette-simulator",
-                        "text": "Explore Source"
-                    }
-                },
-                "why_build_this": {
-                    "body_text": "<b>Printer related tickets made up near 40% of issues</b> coming to the help desk. Most often, staff at the Faculty of Arts had trouble connecting to (or finding) their department printers and the Arts Computing Office had difficulty keeping track of its printers."
-                },
-                "challenges": {
-                    "body_text": "<b>This project was the first web-related work I’d ever done</b> so the main challenges were learning the stack - HTML, CSS & JavaScript, developing with accessibility in mind, and learning how to leverage PowerShell as a back-end. "
-                },
-                "learnings": {
-                    "body_text": "<b>This project made me fall in love with programming</b>. I became comfortable with scripting in PowerShell and was ready to level up my web-development skills as I now had the foundations for HTML, CSS and JavaScript."
-                },
-                "additional_sections": []
             }
         }
     ]

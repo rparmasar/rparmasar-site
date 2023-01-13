@@ -20,7 +20,10 @@ export default function ResumePage() {
       <div className='resume-preamble-container'>
         <Container className=''>
           <Row>
-            <p className='resume-preamble-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac pretium nunc, vel condimentum libero. Morbi sed nisi sed leo suscipit facilisis. Pellentesque feugiat semper sapien, quis tincidunt ipsum consectetur vitae. Donec pharetra est leo, eget iaculis urna porta eu.</p>
+            <div className='resume-preamble-text'>
+              <p>Here's my resume. Take a look, explore my Github and connect with me on LinkedIn.</p>
+              <p>I love meeting new people and learning from them while discussing interesting ideas, especially if we have opposite viewpoints because that's where the conversation really starts.</p>
+            </div>
           </Row>
           <Row className='d-flex resume-cta-container'>
             <CTAButton level='prima' text={'Connect on LinkedIn'} className='resume-cta-btn linkedin-btn' button_href='https://www.linkedin.com/in/rajeev-parmasar-b20352187/' />

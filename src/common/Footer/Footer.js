@@ -13,10 +13,9 @@ export default function Footer() {
   return (
     <Container className='footer-container' fluid>
         <Row xs={1} md={3} className='footer-inner-container justify-content-between'>
-            <Col className='mt-5 footer-about-col'>
+            <Col className='mt-5 footer-about-col left-most-col'>
                 <h2 className='footer-about-header'>Rajeev Parmasar</h2>
-                <p className='footer-about-content'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque molestie efficitur lorem, a tempus leo sollicitudin sit amet.</p>
-                <p className='footer-about-content'>Quisque sed sem suscipit, malesuada ante eget, suscipit lorem.</p>
+                <p className='footer-about-content mb-auto'>Originally hailing from twin isles Trinidad & Tobago, Rajeev is driven by collaborating with others to think differently to solve problems in creative ways.</p>
                 <p className='footer-about-copyright'>© Rajeev Parmasar {new Date().getFullYear()}</p>
             </Col>
             <Col className='mt-5 footer-about-col'>
@@ -48,6 +47,15 @@ export default function Footer() {
                         className='footer-contact-content'>Github</a>
                         <Image src={AboutBlankIcon} className='footer-socials-img'/>
                     </Stack>
+                </Row>
+                <Row className='justify-content-center footer-contact-inner-container pe-3'>
+                    <h2 className='footer-contact-header'>FEEDBACK</h2>
+                    <p className='footer-contact-content'>I'd love to get your feedback on the design and overall experience on the site, please email me at <a href = "mailto: rajeev@parmasar.com" className='footer-contact-email-link'>rajeev@parmasar.com</a></p>
+                </Row>
+                <Row className='justify-content-center footer-contact-inner-container pe-3'>
+                    <h2 className='footer-contact-header'>Acknowledgement</h2>
+                    <p className='footer-contact-content'>
+                        All illustrations created by <a href ="https://www.flaticon.com/authors/parzival-1997" className='footer-contact-email-link'>Parzival’ 1997</a></p>
                 </Row>
             </Col>
         </Row>

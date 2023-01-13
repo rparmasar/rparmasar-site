@@ -7,9 +7,11 @@ import WhyBuildIcon from '../../../assets/images/section-icons/confused.png';
 import ChallengesIcon from '../../../assets/images/section-icons/obstacle.png';
 import LearningsIcon from '../../../assets/images/section-icons/ability.png';
 
+import './FixedSection.css';
+
 export default function FixedSection({ why_build_body_text, challenges_body_text, learnings_body_text }) {
   return (
-    <Container>
+    <Container className='fixsec-container'>
         <Section 
             header_text='Why Build This?'
             header_type='lg'
