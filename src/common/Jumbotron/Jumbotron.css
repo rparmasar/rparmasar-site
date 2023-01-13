@@ -27,3 +27,27 @@
         width: 50%;
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .jumbotron-container {
+        height: 90vh;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .jumbotron-container {
+        height: 92vh;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .jumbotron-container {
+        height: 95vh;
+    }
+}
+
+@media only screen and (max-width: 2560px) {
+    .jumbotron-container {
+        height: 92vh;
+    }
+}

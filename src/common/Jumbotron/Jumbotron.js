@@ -14,7 +14,7 @@ import PenroseTriangle from '../../assets/images/landing-pg-penrose-triangle.svg
 
 export default function Jumbotron() {
   return (
-    <Container className='jumbotron-container'>
+    <Container className='jumbotron-container overflow-hidden'>
         <div className='d-flex jumbotron-row-container'>
           <Row className='gx-5'>
               <Col xs={12} md={8} className='mb-4'>

@@ -32,7 +32,7 @@ export default function Footer() {
                     <h2 className='footer-contact-header'>RESUME</h2>
                     <p className='footer-contact-content'>Interested in seeing my resume?</p>
                     <p className='footer-contact-content'>Download and view a PDF version below.</p>
-                    <CTAButton outline={true} level='secondary' text={'Download Resume'} className='footer-contact-cta-btn'/>
+                    <CTAButton outline={true} level='secondary' text={'Download Resume'} className='footer-contact-cta-btn' button_href='https://drive.google.com/file/d/1M9aJUh0KKPB68UiAlTe0qacxKG-NLvQq/preview'/>
                 </Row>
             </Col>
             <Col className='mt-5 footer-about-col'>
