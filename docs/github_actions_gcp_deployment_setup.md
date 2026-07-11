@@ -44,12 +44,12 @@ after that, we can run use our provider resource name in the github actions yml.
 
 ## permissions issues
 
-used the following to grant write access to our provider above to the artifact registry.
+used the following to grant write access to our provider above to the artifact registry.artifactregistry.repositories.uploadArtifacts' 
 
 ```bash
 gcloud artifacts repositories add-iam-policy-binding main \
     --location='us-central1' \
     --project='main-501801' \
-    --member="principal://iam.googleapis.com/projects/741497491033/locations/global/workloadIdentityPools/github/subject/SUBJECT_ATTRIBUTE_VALUE" \
-    --role="roles/artifactregistry.writer"
+    --role="roles/artifactregistry.writer" \
+    --member="principalSet://iam.googleapis.com/projects/741497491033/locations/global/workloadIdentityPools/github/attribute.repository/main"
 ```
