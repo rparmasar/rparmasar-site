@@ -51,5 +51,5 @@ gcloud artifacts repositories add-iam-policy-binding main \
     --location='us-central1' \
     --project='main-501801' \
     --role="roles/artifactregistry.writer" \
-    --member="principalSet://iam.googleapis.com/projects/741497491033/locations/global/workloadIdentityPools/github/attribute.repository/main"
+    --member="principalSet://iam.googleapis.com/projects/741497491033/locations/global/workloadIdentityPools/github/attribute.repository/rparmasar-site"
 ```
