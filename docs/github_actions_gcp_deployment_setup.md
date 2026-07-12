@@ -1,5 +1,9 @@
 # github actions gcp deployment setup
 
+> this proved to be quite hard and didn't result in the target state I wanted i.e. main docker image building happening within GCP.
+
+> **as such**, this is deprecated but left for reference.
+
 some notes on things I had to do to setup the Github Actions as the deployment pipeline to build and deploy this app to Cloud Run.
 
 ## gcp auth setup via workload-identity

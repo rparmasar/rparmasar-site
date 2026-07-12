@@ -1,0 +1,29 @@
+steps:
+  - name: gcr.io/cloud-builders/docker
+    args:
+      - build
+      - -t
+      - us-central1-docker.pkg.dev/main-501801/main/rparmasar-site:$SHORT_SHA
+      - .
+
+  - name: gcr.io/cloud-builders/docker
+    args:
+      - push
+      - us-central1-docker.pkg.dev/main-501801/main/rparmasar-site:$SHORT_SHA
+
+  - name: gcr.io/google.com/cloudsdktool/google-cloud-cli
+    args:
+      - gcloud
+      - run
+      - deploy
+      - rparmasar-site
+      - --image=us-central1-docker.pkg.dev/main-501801/main/rparmasar-site:$SHORT_SHA
+      - --region=us-central1
+      - --allow-unauthenticated
+      - --cpu=1
+      - --memory=256Mi
+      - --min-instances=0
+      - --max-instances=1
+
+images:
+  - us-central1-docker.pkg.dev/main-501801/main/rparmasar-site:$SHORT_SHA
