@@ -13,6 +13,6 @@ FROM nginx:alpine
 
 COPY --from=build /app/build /usr/share/nginx/html
 
-EXPOSE 80
+COPY nginx.conf.template /etc/nginx/templates/default.conf.template
 
-CMD ["nginx", "-g", "daemon off;"]
+EXPOSE 8080
