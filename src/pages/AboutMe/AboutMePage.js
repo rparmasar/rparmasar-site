@@ -7,7 +7,7 @@ import Section from '../../common/Section/Section';
 
 import './AboutMePage.css';
 
-import ProfilePhoto from '../../assets/images/rparmasar-about.jpg';
+import ProfilePhoto from '../../assets/images/girona.jpg';
 
 export default function AboutMePage() {
   return (
