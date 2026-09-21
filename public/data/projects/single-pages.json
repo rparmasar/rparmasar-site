@@ -4,6 +4,34 @@
             "project_id": 1,
             "content": {
                 "jumbotron": {
+                    "header_text": "Trinibad Analysis",
+                    "body_text": "Predicting the popularity of Trinidad dancehall songs in the US Market.",
+                    "background_image": "images/jumbotron-bgs/trinidad-tobago-flag.jpg",
+                    "primary_cta": {
+                        "href": "https://github.com/rparmasar/trinibad-analysis",
+                        "text": "View Report"
+                    },
+                    "secondary_cta": {
+                        "href": "https://github.com/rparmasar/song-analysis",
+                        "text": "Explore Source"
+                    }
+                },
+                "why_build_this": {
+                    "body_text": "My cousins operated a roulette machine in their bar. They would monitor the numbers throughout the day and then play large sums for certain combinations for example, if 0 was played in the previous round, they would play 31 as they said it was almost sure. <b>Assuming the draws are random, this did not make sense to me</b> so I conceptualized this simulator after learning about Monte Carlo Simulations and then built it 2 years later."
+                },
+                "challenges": {
+                    "body_text": "<b>This was my first attempt to properly use an Object-Oriented (OO) design and practice Test Driven Development</b>. Setting up the automated tests with Github Actions also was an obstacle.<br/><br/>A fun fact: I built 90% of this while on a plane to Trinidad."
+                },
+                "learnings": {
+                    "body_text": "<b>Writing tests beforehand was a game changer</b>. It allowed me to really think about the solution before and not while I was implementing it. This let me break larger functionality into unit functions which made developing much easier and <b>I moved away from a pure OO paradigm into a more functional paradigm</b> where classes are used for representing data, but behaviour is handled by functions."
+                },
+                "additional_sections": []
+            }
+        },
+        {
+            "project_id": 2,
+            "content": {
+                "jumbotron": {
                     "header_text": "Roulette Simulator",
                     "body_text": "Explore the long-term behaviour of various Roulette betting strategies.",
                     "background_image": "images/jumbotron-bgs/roulette-wheel-bg.jpg",
@@ -26,7 +54,7 @@
             }
         },
         {
-            "project_id": 2,
+            "project_id": 3,
             "content": {
                 "jumbotron": {
                     "header_text": "Select Chat",
@@ -51,7 +79,7 @@
             }
         },
         {
-            "project_id": 3,
+            "project_id": 4,
             "content": {
                 "jumbotron": {
                     "header_text": "Arts Printers",
