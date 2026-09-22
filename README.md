@@ -137,4 +137,6 @@ Place image assets in `public/images/` or `public/images/jumbotron-bgs/` (for he
 
 ## License
 
-© 2024 Rajeev Parmasar. All rights reserved.
+This project is licensed under the [LGPL-3.0 license](LICENSE).
+
+All third-party open source licenses for dependencies used in this project are available in `build/package.json`.

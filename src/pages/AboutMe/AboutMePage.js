@@ -131,7 +131,7 @@ export default function AboutMePage() {
             img_desc='A person standing infront of a gear that is connected to various shapes representing components.'
             reverse
             body_text={
-              "Unfortunately, things that make life easier are often expensive (but the converse is not always true). And sometimes, the tools we rely on break in unexpected ways. This is where my inner actuary began to shine. Problems now began to have financial components, security risks and legal compliance risks which drove me to sharpen my business accumen and acturial skills. Not only that, but it was vital that solutions could scale well and facilitate easy maintenance and extensions.<br/><br/>I was excited to integrate my acturial skills to solve problems on an even grander scale."
+              "Unfortunately, things that make life easier are often expensive (but the converse is not always true). And sometimes, the tools we rely on break in unexpected ways. This is where my inner actuary began to shine. Problems now began to have financial components, security risks and legal compliance risks which drove me to sharpen my business accumen and actuarial skills. Not only that, but it was vital that solutions could scale well and facilitate easy maintenance and extensions.<br/><br/>I was excited to integrate my actuarial skills to solve problems on an even grander scale."
             }
           />
           <Section 
