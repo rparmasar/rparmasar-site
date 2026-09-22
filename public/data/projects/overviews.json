@@ -3,8 +3,36 @@
         {
             "id": 1,
             "content": {
+                "header_text": "Trinibad Analysis",
+                "body_text": "<b>An experiment that predicts the expected popularity of trinidad dancehall tracks in the US market</b> by using a model trained on top hip-hop songs. It includes an ETL pipeline that takes in either a list of tracks or a list of playlists to create a modelling dataset using the Spotify API, as well as a model training script, and evaluation notebooks.<br/><br/>It was also used to setup my fully local agentic workflow.",
+                "image": "images/jumbotron-bgs/trinidad-tobago-flag.jpg",
+                "image_description": "A flagpole showing the flag of Trinidad and Tobago.",
+                "source_url": "https://github.com/rparmasar/song-analysis",
+                "icon_list": [
+                    {
+                        "name": "Python",
+                        "icon_image": "images/bw-icons/python.png"
+                    },
+                    {
+                        "name": "Juptyer",
+                        "icon_image": "images/bw-icons/jupyter.png"
+                    },
+                    {
+                        "name": "Scikit-learn",
+                        "icon_image": "images/bw-icons/scikit-learn.png"
+                    },
+                    {
+                        "name": "Spotify",
+                        "icon_image": "images/bw-icons/spotify.svg"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 2,
+            "content": {
                 "header_text": "Roulette Simulator",
-                "body_text": "<b>An engine written in Python for simulating the performance of various Roulette betting strategies</b>. It features the ability to add multiple players and players can leverage various elementary bets (like $2 on Black or $10 on first dozen) to create more complex strategies like the Bond strategy. Player balances are displayed as a real-time plot that is drawn as rounds are played. It currently supports an European Wheel default with the ability to extend to other wheel types like an American wheel which features the '00'.<br/><br/>It features with an automated testing pipeline using pytest and Github Actions.",
+                "body_text": "<b>An engine written in Python for simulating the performance of various Roulette betting strategies</b>. It features the ability to add multiple players and players can leverage various elementary bets (like $2 on Black or $10 on first dozen) to create more complex strategies like the Bond strategy. Player balances are displayed as a real-time plot that is drawn as rounds are played. It currently supports an European Wheel default with the ability to extend to other wheel types like an American wheel which features the '00'.<br/><br/>It features an automated testing pipeline using pytest and Github Actions.",
                 "image": "images/jumbotron-bgs/roulette-wheel-bg.jpg",
                 "image_description": "A Roulette Wheel",
                 "source_url": "https://github.com/rparmasar/roulette-simulator",
@@ -29,7 +57,7 @@
             }
         },
         {
-            "id": 2,
+            "id": 3,
             "content": {
                 "header_text": "Select Chat",
                 "body_text": "<b>An online interface designed for realtors to send SMS messages</b> (manually or automatically) <b>through the internet</b>. It's interface is built with React and the backend with ExpressJS (on top of Node JS). It leverages the Twilio API to send and receive messages with a provisioned cell number. MailChimp is used as a database to store lead information.<br/><br/>During use, it was deployed on Heroku via it's command line interface (CLI).",
@@ -57,7 +85,7 @@
             }
         },
         {
-            "id": 3,
+            "id": 4,
             "content": {
                 "header_text": "Arts Printers",
                 "body_text": "<b>A procedurally generated website that uses PowerShell to populate all printers</b> within the Faculty of Arts that are <b>connected to Active Directory</b>. It features a filterable table indexed by printer name, model, location, department and description. To help with installation, it also features a modal which displays instructions based on the user's operating system and a copyable path to the printer.<br/><br/>It is deployed on the Faculty of Arts' servers and runs as a task at 8 am each morning.",
@@ -85,7 +113,7 @@
             }
         },
         {
-            "id": 4,
+            "id": 5,
             "content": {
                 "header_text": "SummerHack 2020",
                 "body_text": "<a href='https://cookhouselabs.com/'>Cookhouse Labs</a> is an incubator that also faciliates innovation focused hackathons for insurance companies.<br/><br/>During COVID-19, many restaurants closed because they operated on thin profit margins, even pre-pandemic. Our task was to create an insurance product that helps these restaurants during these crises.<br/><br/>We adopted an unconvential approach to insurance where <b>our product steps before the restaurant goes bankrupt</b>. We took this idea to form the start-up <a href='https://reimage.cfo-ai.com/'>CFOai</a>",
@@ -113,7 +141,7 @@
             }
         },
         {
-            "id": 5,
+            "id": 6,
             "content": {
                 "header_text": "Quantify 2020",
                 "body_text": "<a href='https://uwquantify.wixsite.com/website'>Quantify<a/> is an annual case competition held by the University of Waterloo (UW) and pioneered by UW's ActSci Club.<br/><br/>I participated with a team of 3 other students from various majors like data science and combinatorics & optimization to develop <b>a solution to transform a P&C insurer into a multi-line insurance company by offering wellness-based health products</b>.<br/><br/>It was a great experience collaborating with and learning from this team and subject matter experts from Besurance and Fenchurch General.",

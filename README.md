@@ -1,79 +1,141 @@
-# Getting Started with Create React App
+# Rajeev Parmasar - Personal Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A data-driven personal website built with React, deployed on Google Cloud Run via Cloud Build.
+
+**Live Site**: [rparmasar.com](https://rparmasar.com)
+
+[![React](https://img.shields.io/badge/React-18-black?logo=react)](https://reactjs.org/)
+[![Docker](https://img.shields.io/badge/Docker-deployed-blue?logo=docker)](https://cloud.google.com/run)
+
+## About
+
+This is a **data-driven personal portfolio** that showcases projects, resume, and professional background. The site uses JSON files (`public/data/`) to store all content, enabling easy updates without touching React components. Built as a single-page application with React Router for client-side navigation.
+
+## Key Features
+
+- **Dynamic Content**: All site content (projects, bio, resume entries) is defined in JSON files
+- **SPA Architecture**: Client-side routing with React Router v6 for seamless navigation
+- **Responsive Design**: Bootstrap 5 grid system for mobile-first layout
+- **Docker Deployment**: Production-ready container image optimized for Cloud Run
+- **Cloud Build Pipeline**: Automated builds triggered on `main` branch pushes
+
+## Tech Stack
+
+| Category | Technologies |
+|----------|-------------|
+| **Frontend** | React 18, React DOM, React Router v6 |
+| **Styling** | Bootstrap 5, React Bootstrap |
+| **Deployment + CI/CD** | Docker, Google Cloud Run, Cloud Build |
+| **Utilities** | interweave (typography), typewriter-effect |
+| **Testing** | Jest, Testing Library |
+
+## Project Structure
+
+```
+rparmasar-site/
+├── public/
+│   ├── data/              # JSON content files (no React code touches this)
+│   │   ├── about/
+│   │   │   └── about-sections.json      # Bio sections and bio content
+│   │   └── projects/
+│   │       ├── overviews.json           # Project listing cards
+│   │       └── single-pages.json        # Detailed project pages
+│   └── images/              # Site assets
+├── src/
+│   ├── common/             # Reusable UI components
+│   │   ├── Header/        # Sticky top navigation
+│   │   ├── NavBar/        # Main navigation links
+│   │   ├── Footer/        # Page footer (conditionally rendered)
+│   │   └── Jumbotron/     # Hero sections with background images
+│   ├── pages/              # Route-specific page components
+│   │   ├── AboutMe/       # /about route
+│   │   ├── ProjectList/   # /projects route  
+│   │   ├── SingleProject/ # /projects/:name dynamic route
+│   │   ├── Resume/        # /resume route
+│   │   └── NotFound/      # 404 handler
+│   ├── hooks/             # Custom React hooks
+│   │   └── useLocalData.js # Fetches JSON content at runtime
+│   └── App.js             # Route configuration (lines 1-36)
+├── Dockerfile            # Production image definition
+├── cloudbuild.yaml       # Cloud Build pipeline config
+├── package.json
+└── README.md
+```
 
 ## Available Scripts
 
-In the project directory, you can run:
+```bash
+npm run start        # Development server at http://localhost:3000
+npm run build        # Production build → build/ folder
+npm test             # Interactive Jest test runner
+```
 
-### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-# running the container
+### Docker Commands
 
 ```bash
-# to generate new image
-docker build -t rparmasar-site .
-# to run container
-docker run -p 8080:80 rparmasar-site
+docker build -t rparmasar-site .     # Build production image
+docker run -p 8080:80 rparmasar-site # Test locally
 ```
+
+### Deploy to Cloud Run
+
+```bash
+# From Google Cloud shell or gcloud CLI
+gcloud builds submit --tag gcr.io/PROJECT_ID/rparmasar-site:latest
+gcloud run deploy rparmasar-site \
+  --image gcr.io/PROJECT_ID/rparmasar-site:latest \
+  --region us-central1
+```
+
+## Deployment: Cloud Build → Cloud Run
+
+### Pipeline Overview
+
+The site is deployed to **Google Cloud Run** using **Cloud Build**, triggered automatically on pushes to the `main` branch. The pipeline:
+
+1. **Builds Docker image** in GCP (no checkout step needed—Cloud Build provides source in `/workspace`)
+2. **Pushes to Artifact Registry** for secure artifact storage
+3. **Deploys to Cloud Run** with automatic scaling and managed infrastructure
+
+### Why This Architecture?
+
+- **Automated**: Pushes to `main` trigger builds and deployments automatically
+- **Secure**: Uses GCP Workload Identity for authentication (no long-lived service accounts in GitHub)
+- **Efficient**: Builds happen within GCP, avoiding large external artifact transfers
+- **Observable**: Cloud Logging and Stackdriver integration for production debugging
+
+### Key Deployment Learnings
+
+- Cloud Build automatically checks out source to `/workspace` on trigger fire—no explicit checkout step needed in `cloudbuild.yaml`
+- Nginx container uses `${PORT}` template variable for dynamic port binding (required for Cloud Run's PORT=8080)
+- Custom service accounts require either a logs bucket or `CLOUD_LOGGING_ONLY` logging config
+
+See [`docs/cloudbuild_checkout_notes.md`](docs/cloudbuild_checkout_notes.md) for deeper technical details.
+
+## Adding/Editing Content
+
+Since content is JSON-based, you can update the site without touching React components:
+
+### Projects (`public/data/projects/`)
+- `single-pages.json`: Detailed project pages
+- `overviews.json`: Project listing cards
+
+### About Page (`public/data/about/`)
+- `about-sections.json`: Bio sections and text content
+
+### Adding Images
+Place image assets in `public/images/` or `public/images/jumbotron-bgs/` (for hero backgrounds) and reference them in JSON files.
+
+## Resources
+
+- [React Documentation](https://reactjs.org/)
+- [React Router v6](https://reactrouter.com/)
+- [Bootstrap 5](https://getbootstrap.com/docs/)
+- [Google Cloud Run](https://cloud.google.com/run/docs)
+- [Cloud Build Tutorials](https://cloud.google.com/cloud-build/docs/tutorials)
+
+## License
+
+This project is licensed under the [LGPL-3.0 license](LICENSE).
+
+All third-party open source licenses for dependencies used in this project are available in `build/package.json`.

@@ -20,8 +20,7 @@ export default function ProjectListPage() {
                     <Header type='lg' text='Projects'/>
                 </Row>
                 <Row className='pt-2 mb-2'>
-                    <p><i>"You can't cross the sea merely by standing and staring at the water" - Rabindranath Tagore</i></p>
-                    <p>I'm a big fan of project-based learning. I enjoy pushing the limit of my knowledge by finding something I want to explore, and then struggling until I get it right. Then, I would have learned something.</p>
+                    <p>I'm a big fan of project-based learning. I enjoy pushing the limit of my knowledge by finding something I want to explore, and then struggling until I get it right.</p>
                     <p>Here is a list of some of the projects I've worked on along my journey.</p>
                 </Row>
                 <Row className='pt-2'>
