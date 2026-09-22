@@ -11,7 +11,7 @@ some notes on things I had to do to setup the Github Actions as the deployment p
 here are the `gcloud` commands used to setup auth (taken from https://github.com/google-github-actions/auth#preferred-direct-workload-identity-federation)
 
 ```bash
-export PROJECT_ID="main-501801"
+export PROJECT_ID=""
 
 # creates a workload identity pool called 'github'
 gcloud iam workload-identity-pools create "github" \
@@ -53,7 +53,7 @@ used the following to grant write access to our provider above to the artifact r
 ```bash
 gcloud artifacts repositories add-iam-policy-binding main \
     --location='us-central1' \
-    --project='main-501801' \
+    --project='${PROJECT_ID}$' \
     --role="roles/artifactregistry.writer" \
     --member="principalSet://iam.googleapis.com/projects/741497491033/locations/global/workloadIdentityPools/github/attribute.repository/rparmasar-site"
 ```
