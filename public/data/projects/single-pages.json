@@ -8,7 +8,7 @@
                     "body_text": "Predicting the popularity of Trinidad dancehall songs in the US Market.",
                     "background_image": "images/jumbotron-bgs/trinidad-tobago-flag.jpg",
                     "primary_cta": {
-                        "href": "https://github.com/rparmasar/trinibad-analysis",
+                        "href": "https://github.com/rparmasar/song-analysis#tldr",
                         "text": "View Report"
                     },
                     "secondary_cta": {
@@ -17,15 +17,32 @@
                     }
                 },
                 "why_build_this": {
-                    "body_text": "My cousins operated a roulette machine in their bar. They would monitor the numbers throughout the day and then play large sums for certain combinations for example, if 0 was played in the previous round, they would play 31 as they said it was almost sure. <b>Assuming the draws are random, this did not make sense to me</b> so I conceptualized this simulator after learning about Monte Carlo Simulations and then built it 2 years later."
+                    "body_text": "I've been a big fan of both trinidad dancehall (trinibad) and hip-hop music. I found it interesting how similar these genres are, both thematically and musically. Given that hip-hop was the dominating genre in the US, <b>I started wondering how that market might respond to trinidad dancehall?</b>."
                 },
                 "challenges": {
-                    "body_text": "<b>This was my first attempt to properly use an Object-Oriented (OO) design and practice Test Driven Development</b>. Setting up the automated tests with Github Actions also was an obstacle.<br/><br/>A fun fact: I built 90% of this while on a plane to Trinidad."
+                    "body_text": "A first challenge was <b>finding out what data even existed and how could I fetch that en-masse</b> to create a dataset rich enough to explore. After some research, I found the Spotify API docs and that got me started on the ETL pipeline.<br/><br/>I did some initial exploring but then life happened and this project got parked for ~ 2 years. This was the second challenge i.e. <b>figuring out how to continue developing in an older codebase.<b/>"
                 },
                 "learnings": {
-                    "body_text": "<b>Writing tests beforehand was a game changer</b>. It allowed me to really think about the solution before and not while I was implementing it. This let me break larger functionality into unit functions which made developing much easier and <b>I moved away from a pure OO paradigm into a more functional paradigm</b> where classes are used for representing data, but behaviour is handled by functions."
+                    "body_text": "This was a good exercise in the end-to-end model development process minus deployment, but my day-to-day at work was mainly on the MLOps side, so this was <b>a good opportunity to hone my modelling skills</b>.<br/><br/>More great learnings came from setting up a <b> fully local agentic workflow.</b> which did a good job at accelerating the process."
                 },
-                "additional_sections": []
+                "additional_sections": [
+                    {
+                        "header_text": "(Attempting) Local Agentic Setup",
+                        "body_text": [
+                            "Being able to delegate tasks to a model while working on other things has been a great part of my daily workflow in work so I wanted a way to replicate that for personal projects while keeping costs low.<br/><br/>Luckily, I had also recently bought a new laptop with some decent specs and decided to try running it locally. I initially started with ollama and downloaded a few open source models - gemma, qwen and bonsai. However, this setup resulted in the models performing terribly in terms of correctness but also latency.<br/><br/>A few days of youtube vids, docs and ai mode - I switched to LM Studio with qwen-3.5 9B + opencode for agentic coding tasks and qwen-2.5-coder-1.5B-instruct for autocomplete. These models take ~ 8 GB VRAM with a 24k context and ~ 950 MB with an 8192 context respectively. They worked okay but still ran into issues due to running out of context, especially the agentic coding one."
+                        ],
+                        "image": "",
+                        "image_desc": ""
+                    },
+                    {
+                        "header_text": "Progress!",
+                        "body_text": [
+                            "The main breakthrough came through <b>better managing the context for the model</b> for example through maintaining an AGENTS.md to keep track of important things about the repo so the model doesn't have to look those up everytime.<br/><br/>Another method was through <b>using skills to manage context</b>. Referencing Juptyer notebooks using @ tended to brick the model as the file (a very heavy json with images) would exceed the context. The solution here was to create a skill to safely read notebook chunks so that the model could load these lazily.<br/><br/>Since that, I've been able to use the model for organizing various comments and helping with generating better docs. <b></b> This is still a work in progress</b>, but learning more after each setback is an exciting journey."
+                        ],
+                        "image": "",
+                        "image_desc": ""
+                    }
+                ]
             }
         },
         {
