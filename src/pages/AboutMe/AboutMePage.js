@@ -21,9 +21,9 @@ export default function AboutMePage() {
         <Container>
           <Section 
             header_type='none'
-            body_text="I'm Rajeev Parmasar and I love solving cool problems in innovative ways. Along my journey, I've curated my critical thinking skills to become adept at actuarial science, software development, mathematics, and entrepreneurship.<br/><br/>I'm originally from the beautiful pair of islands, Trinidad and Tobago 🇹🇹, and migrated to Canada to attend the University of Waterloo. In my spare time, I'm usually exploring various YouTube rabbit holes like film critques, speedruns, strength programming and mind-blowing philosphy/metaphysics videos."
+            body_text="I'm Rajeev Parmasar and I love solving cool problems in innovative ways. Along my journey, I've curated my critical thinking skills to become adept at data science, software engineering, mathematics, and entrepreneurship.<br/><br/>I'm originally from the beautiful pair of islands, Trinidad and Tobago 🇹🇹, and migrated to Canada to attend the University of Waterloo. Outside of my work, I like strength programming, various video games, going down youtube + wikipedia rabbit holes, and seeing new places."
             img_name={ProfilePhoto}
-            img_desc={"Rajeev standind at the overlook of Mount Royal, Montreal."}
+            img_desc={"Rajeev sitting on a castle wall in Girona"}
             use_static_img
           />
         </Container>
@@ -34,7 +34,8 @@ export default function AboutMePage() {
           <Row className='text-container'>
             <p><i>"The master has failed more times than the beginner has even tried." - Stephen McCranie</i></p>
             <p>That's my main philosphy because it shows us that failure is natural on the path to excellence.</p>
-            <p>Over my journey, I've dabbled in many things from <b>math heavy topics</b> like Machine Learning (ML) & Artificial Intelligence (AI), <b>creative spaces</b> like User Interface/User Experience (UI/UX) Design & Copywriting, and <b>team-oriented activities</b> like case competitions, impactathons and public speaking.</p>
+            <p>Over my journey, I've dabbled in many things from <b>math heavy topics</b> like Machine Learning (ML) & Artificial Intelligence (AI), <b>creative spaces</b> like User Interface/User Experience (UI/UX) Design & Front-end Web Development, and <b>team-oriented activities</b> like case competitions, impactathons and public speaking.</p>
+            <p>Professionally, I mostly spent my time in a MLOps role on an analytics team focused on <b>fraud detection</b> in insurance.</p>
           </Row>
         </Container>
         <Container>
