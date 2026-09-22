@@ -25,8 +25,7 @@ This is a **data-driven personal portfolio** that showcases projects, resume, an
 |----------|-------------|
 | **Frontend** | React 18, React DOM, React Router v6 |
 | **Styling** | Bootstrap 5, React Bootstrap |
-| **Deployment** | Docker, Google Cloud Run, Cloud Build |
-| **CI/CD** | GitHub Actions → GCP Workload Identity |
+| **Deployment + CI/CD** | Docker, Google Cloud Run, Cloud Build |
 | **Utilities** | interweave (typography), typewriter-effect |
 | **Testing** | Jest, Testing Library |
 
