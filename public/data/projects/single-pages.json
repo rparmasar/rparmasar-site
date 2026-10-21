@@ -1,6 +1,51 @@
 {
     "data": [
         {
+            "project_id": 7,
+            "content": {
+                "jumbotron": {
+                    "header_text": "Training Video Organizer",
+                    "body_text": "A command line tool to keep track of my training logs and videos",
+                    "background_image": "images/jumbotron-bgs/440_deadlift.png",
+                    "primary_cta": {
+                        "href": "https://github.com/rparmasar/training-vid-organizer#opening-videos-demo",
+                        "text": "View Demo"
+                    },
+                    "secondary_cta": {
+                        "href": "https://github.com/rparmasar/training-vid-organizer",
+                        "text": "Explore Source"
+                    }
+                },
+                "why_build_this": {
+                    "body_text": "I wanted <b>to compare my performance for different lifts</b> e.g. 'how do my squats at 275 look over time and at different bodyweights?' <br/><br/>I mainly use Google Photos which doesn't have an easy way to tag lifts so I decided to build a tool that would allow me to organize my training logs and videos in a way that was easy to access and understand."
+                },
+                "challenges": {
+                    "body_text": "Designing the solution was relatively simple - a local sqlite database with functions to handle CRUD operations, <b>the harder challenge came from figuring out how this tool would fit into my existing workflow</b> for managing my training sessions. It took some stepping back to more thoroughly understand the user journey (in this case me) to properly figure out how to flesh the tool out so that it serves its purpose.<br/><br/>In the end, this was solved through features like adding sessions via csv, adding commands to analyze training macro-cycles, and using it to actively compare my performance across various lifts - <b>all of which aimed to make my life easier when using the tool.</b>"
+                },
+                "learnings": {
+                    "body_text": "This project was my second time developing a command line interface <i>(the first being an internal tool at Definity)</i> and I incorporated a lot of lessons from that in this current build. Namely, <b>always designing and building things with that are ultimately useful for the end user</b>.<br/><br/>Another key learning for me was around semantic versioning, uploading to PyPI, and creating a <code>build-and-release</code> pipeline to release new versions to PyPI in an automated way (more below)."
+                },
+                "additional_sections": [
+                    {
+                        "header_text": "Improving the Local Agentic Setup",
+                        "body_text": [
+                            "In my last project (trinibad analysis), I found decent success using the qwen 3.5 9B model for my agentic coding needs. This time around, I found a quantized version that had a marginally better correctness but a major improvement in inference time!<br/><br/><a href='https://huggingface.co/DavidAU/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP-GGUF'>shoutout to DavidAU, for the quantized model.</a><br/><br/>Now, while this model provided a better user experience, I still couldn't one-shot the app (and not for lack of trying :D). I had to be <b>more intentional and explicit with the design and test-driven development (TDD) was really the key</b> to making progress here. Thus, my workflow usually started with writing CLI-level tests first, then working inwards to the pure functions that would drive the actual application logic, and finally handing off the implementation to the agent. Using OpenCode's Plan agent also really helped to translate my natural language asks into codebase-specific tasks that would then be easier to implement with the Build agent.<br/><br/>Some other neat tricks were <b>making sure to regularly offload context to the relevant docs-type files to keep performance smooth</b> which had an excellent latent benefit of building up documentation as development went on, a task that often gets postponed and thus, never done :("
+                        ],
+                        "image": "",
+                        "image_desc": ""
+                    },
+                    {
+                        "header_text": "Continuous Integration, Semantic Versioning & PyPI",
+                        "body_text": [
+                            "Continuous Integration (CI) has been my main learning / area of improvement for 2026 - shoutout to <a href='https://www.youtube.com/watch?v=Xl62gQpAl1w&list=PLwLLcwQlnXBwYldncW6PcnscoqiFsH7un'>Dave Farley and the Modern Software Engineering channel</a> as great resources on this journey.<br/><br/>Practicing CI became even more important since I didn't want to manually upload my package to PyPI <i>(Python's package repository)</i> every time I made a change, and it also provided guardrails for maintaining code quality + correctness of agent-generated code. Moreover, keeping track of version numbers and figuring out when to bump and by how much would become a cumbersome task. <br/><br/>The solution here was setting up 2 pipelines - <b>one that tests the code</b> on any push to any branch, and <b>one that makes the code useful</b> i.e. tags, builds and deploys the code to PyPI while auto-bumping the version number. The automated version bumping is handled by a very simple script that relies on the use of conventional commits where <code>feat:</code> commits bump the minor version and any other type (<code>fix:, refactor:, perf:)</code> bumps the patch version."
+                        ],
+                        "image": "",
+                        "image_desc": ""
+                    }
+                ]
+            }
+        },
+        {
             "project_id": 6,
             "content": {
                 "jumbotron": {
