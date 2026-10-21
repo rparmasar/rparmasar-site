@@ -28,7 +28,7 @@
             "id": 6,
             "content": {
                 "header_text": "Trinibad Analysis",
-                "body_text": "<b>An experiment that predicts the expected popularity of trinidad dancehall tracks in the US market</b> by using a model trained on top hip-hop songs. It includes an ETL pipeline that takes in either a list of tracks or a list of playlists to create a modelling dataset using the Spotify API, as well as a model training script, and evaluation notebooks.<br/><br/>It was also used to setup my fully local agentic workflow.",
+                "body_text": "<b>An experiment that predicts the expected popularity of trinidad dancehall tracks in the North American market</b> by using a model trained on top hip-hop songs. It includes an ETL pipeline that takes in either a list of tracks or a list of playlists to create a modelling dataset using the Spotify API, as well as a model training script, and evaluation notebooks.<br/><br/>It was also used to setup my fully local agentic workflow.",
                 "image": "images/jumbotron-bgs/trinidad-tobago-flag.jpg",
                 "image_description": "A flagpole showing the flag of Trinidad and Tobago.",
                 "source_url": "https://github.com/rparmasar/song-analysis",

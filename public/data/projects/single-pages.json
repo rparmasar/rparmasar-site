@@ -50,7 +50,7 @@
             "content": {
                 "jumbotron": {
                     "header_text": "Trinibad Analysis",
-                    "body_text": "Predicting the popularity of Trinidad dancehall songs in the US Market.",
+                    "body_text": "Predicting the popularity of Trinidad dancehall songs in the North American Market.",
                     "background_image": "images/jumbotron-bgs/trinidad-tobago-flag.jpg",
                     "primary_cta": {
                         "href": "https://github.com/rparmasar/song-analysis#tldr",
