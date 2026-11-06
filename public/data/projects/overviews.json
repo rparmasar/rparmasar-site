@@ -1,10 +1,30 @@
 {
     "data": [
         {
+            "id": 8,
+            "content": {
+                "header_text": "TT News Scraper",
+                "body_text": "<b>A command-line interface tool that aggregates articles from popular newspapers of Trinidad & Tobago.</b> Using BeautifulSoup4 for parsing and <code>argparse</code> for the cli, it fetches headlines and content from the TT Express and TT Guardian sites to create a dataframe for later use in ML projects. It handles paginated lists, navigating to individual article links, supports search terms, and includes a polite delay between requests to prevent denial-of-service events.<br/><br/>This is my second package published on PyPI.",
+                "image": "images/jumbotron-bgs/chaguanas.jpeg",
+                "image_description": "Rajeev deadlifting 440 on a platform",
+                "source_url": "https://github.com/rparmasar/tt-news-scraper",
+                "icon_list": [
+                    {
+                        "name": "Beautiful Soup 4",
+                        "icon_image": "images/bw-icons/bs4.jpeg"
+                    },
+                    {
+                        "name": "Python",
+                        "icon_image": "images/bw-icons/python.png"
+                    }
+                ]
+            }
+        },
+        {
             "id": 7,
             "content": {
                 "header_text": "Training Video Organizer",
-                "body_text": "<b>A command-line interface to manage my exercise videos</b> shot on the xtu go s6 action camera. Installable from PyPI, it uses a local sqlite database and typer to keep track of strength training data and features helpful tools to ingest videos and compare performance across various factors (e.g. lift, program, weight) using their videos and computed metrics like estimated one-rep max and total set volume.<br/><br/>It uses uv as the build system and is my first package published on PyPI.",
+                "body_text": "<b>A command-line interface to manage my exercise videos</b> shot on the xtu go s6 action camera. Installable from PyPI, it uses a local sqlite database and <code>typer</code> to keep track of strength training data, features helpful tools to ingest videos and compare performance across various factors (e.g. lift, program, weight) using their videos and computed metrics like estimated one-rep max and total set volume, and also exposes an interactive shell for running SQL queries.<br/><br/>It uses uv as the build system and is my first package published on PyPI.",
                 "image": "images/jumbotron-bgs/440_deadlift.png",
                 "image_description": "Rajeev deadlifting 440 on a platform",
                 "source_url": "https://github.com/rparmasar/training-vid-organizer",

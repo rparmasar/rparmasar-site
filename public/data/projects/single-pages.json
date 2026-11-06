@@ -1,6 +1,43 @@
 {
     "data": [
         {
+            "project_id": 8,
+            "content": {
+                "jumbotron": {
+                    "header_text": "TT News Scraper",
+                    "body_text": "A command line tool to build datasets using news articles from Trinidad & Tobago",
+                    "background_image": "images/jumbotron-bgs/chaguanas.jpeg",
+                    "primary_cta": {
+                        "href": "https://github.com/rparmasar/tt-news-scraper/tree/main#trinidad--tobago-news-scraper",
+                        "text": "View Demo"
+                    },
+                    "secondary_cta": {
+                        "href": "https://github.com/rparmasar/tt-news-scraper",
+                        "text": "Explore Source"
+                    }
+                },
+                "why_build_this": {
+                    "body_text": "I was looking for Trinidad-focused datasets to explore for an ML project and came across this excellent one on Kaggle that aggregated newspaper articles from an online media house in Trinidad - <a href='https://www.kaggle.com/datasets/chelcbee/crime-related-news-articles-in-trinidad/data'>Trinidad Crime Related News Articles | chelcbee</a><br/><br/>However, Trinidad-related datasets were quite limited.  <b>After seeing the Kaggle dataset above, I was inspired to build a tool that could enabled folks to create similar datasets</b> from Trinidad & Tobago's most popular media houses - TT Express & TT Guardian."
+                },
+                "challenges": {
+                    "body_text": "The <b>first challenge came from making sure the script could properly select the HTML elements with relevant content</b> - namely, the author & date. This was solved by using very specific CSS selectors to target specific elements within the heavily nested HTML structure, and spending a bit of time using DevTools to find the exact classes needed.<br/><br/>The <b>second challenge came from handling pagination reliably</b> i.e. ensuring the script can fetch all the content from one page, navigate to the next, and continue fetching until the max pages limit was reached. This had to be solved differently for each source as they likely used different frameworks to build the sites. <b>The key to figuring out this one was really taking a step back to plan out the procedure</b>, and then passing it to my local agentic setup to implement it in a test-driven development so that it can iterate until it gets it exactly correct."
+                },
+                "learnings": {
+                    "body_text": "This was <b>my first project that used Beautiful Soup at the core of it</b> as my other uses were limited to very simple log parsing cases at work, and it really gave me an appreciation for the package authors as they exposed such powerful functionality with a relatively clean API.<br/><br/>It was also <b>my first time building a CLI with</b> <code>argparse</code>, as initially this was just going to be a `main.py` script and likely not even deployed to PyPI. However, setting up <code>argparse</code> + <code>pyproject.toml</code> to turn it into a cleaner cli turned out to be so simple that it seemed wrong to not package it. Compared to <code>typer</code> (used in training-vid-organizer), it is definitely a lot more bare bones but that also helps with reducing dependency bloat for the package and the extra <code>typer</code> features are likely overkill in this usecase."
+                },
+                "additional_sections": [
+                    {
+                        "header_text": "Contributing more Trinidad Datasets & Next Steps",
+                        "body_text": [
+                            "I added some datasets I made with the tool to Kaggle to hopefully fill the gap of Trinidad-focused datasets - <a href='https://www.kaggle.com/datasets/rajeevparmasar/trinidad-and-tobago-newspaper-articles'>Trinidad and Tobago Newspaper Articles | rparmasar</a>, maybe inspire someone else to do some cool NLP projects, make their own interesting datasets or even make the tool better! <i>(as is the true beauty of open source)</i>.<br/><br/>As for me, I'll likely try to explore a few topics of my own - likely related to NLP (sentiment analysis, topic modelling) and ideally, I can use a local-friendly model in the analysis."
+                        ],
+                        "image": "",
+                        "image_desc": ""
+                    }
+                ]
+            }
+        },
+        {
             "project_id": 7,
             "content": {
                 "jumbotron": {
